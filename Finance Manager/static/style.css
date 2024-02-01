@@ -1,0 +1,345 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#app{
+    max-width: 600px;
+    background-color: #fff;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-bottom: 8px;
+}
+
+li{
+    margin-bottom: 8px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+#transactions{
+    margin-top: 20px;
+}
+
+input, select{
+    margin-bottom: 16px;
+    padding: 8px;
+}
+
+button{
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #45a049;
+}
+
+.transaction-details{
+    margin-bottom: 10px;
+}
+
+.transaction-details div{
+    margin-bottom: 5px;
+}
+
+#budgets{
+    margin-top: 20px;
+}
+
+#budgets > div{
+    margin-bottom: 10px;
+}
+
+.side-panel{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.side-panel button{
+    margin-bottom: 10px;
+}
+
+#manageGoalsButton{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.button-container{
+    justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+}
+
+.close-btn{
+    background-color: #ff6347;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    color: white;
+}
+
+.side-panel .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.side-panel .header h2{
+    margin: 0;
+}
+
+.side-panel .content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.side-panel .add-goal-section,
+.side-panel .goal-list-section{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.side-panel .add-goal-section div,
+.side-panel .goal-list-section ul{
+    margin-bottom: 10px;
+}
+
+.side-panel .add-goal-section label,
+.side-panel .goal-list-section h3{
+    margin-bottom: 5px;
+}
+
+.close-btn:hover{
+    background-color: #d9534f;
+}
+
+#searchFilterContainer{
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    margin-bottom: 10px;
+    width: 27%;
+}
+
+#searchInput, #filterCategory{
+    width: 130px;
+}
+
+#applyFiltersButton{
+    margin-left: 6px;
+    height: 36px;
+    border-radius: 10px;
+}
+
+#searchInput{
+    margin-right: 7px;
+}
+
+#sidePanel{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+}
+
+#manageTransactions{
+    position: absolute;
+    top: 10px;
+    right: 130px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#closeTransactions{
+    background-color: #ff6347;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    color: white;
+}
+
+#transactions{
+    padding: 20px;
+}
+
+#transactionList{
+    list-style: none;
+    padding: 0;
+}
+
+#transactionArea button{
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#sidePanel button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#accountFilter{
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#buttonContainer{
+    justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+}
+
+.transaction-panel{
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.transaction-list{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+h2{
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+button{
+    padding: 8px 14px;
+    background-color: #4caf50;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #45a049;
+}
+
+#avatar-container{
+    display: flex;
+    align-items: center;
+}
+
+#avatar{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+#avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#user-info{
+    margin-right: 10px;
+}
+
+#login-signup button{
+    margin-right: 10px;
+    padding: 8px 16px;
+    margin-top: 10px;
+   margin-left: 150px;
+}
+
+.button-space{
+    width: 20px;
+}
+
+#login-form,
+#signup-form{
+    display: none;
+}
+
+#popup-bar{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.hidden{
+    display: none;
+}
