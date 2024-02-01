@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate Random Color Pallete, OTP and QR Codes</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="nav-bar"></div>
+      <div id="inside-content">
+        <h2 id="nav-logo">Roustuf</h2>
+      </div>
+    </header>
+    <main>
+      <div id="container"></div>
+      <h2 id="heading-1-firstLine">The superfast color</h2>
+      <h2 id="heading-1-secondLine">pallete generator !</h2>
+      <h4 id="insideLine-1">Create a color pallete or exolore attractive</h4>
+      <h4 id="insideLine-2">combinations of colors...</h4>
+      <button id="generate-color-pallete" onclick="generateColorPalette()">
+        Generate Color Pallete
+      </button>
+      <div id="second-container"></div>
+      <div id="third-container"></div>
+      <button id="generate-QR-code" onclick="generateQRcode()">
+        Get a QR Code
+      </button>
+      <button id="generate-an-otp" onclick="generateOTP()">Get an OTP</button>
+    </main>
+    <img
+      id="qr-img"
+      src="https://img.freepik.com/free-vector/scan-me-qr-code_78370-2915.jpg?size=338&ext=jpg&ga=GA1.1.1448711260.1706313600&semt=ais"
+      alt="QR-Code"
+    />
+    <img
+      id="otp-image"
+      src="https://thumbs.dreamstime.com/b/otp-one-time-password-step-authentication-data-protection-internet-security-concept-otp-one-time-password-step-authentication-data-254434939.jpg"
+      alt="OTP-Image"
+    />
+    <div id="result" style="display: none">
+      <img id="qr-code" src="" alt="QR-Code" />
+      <img id="otp-code" src="" alt="OTP" />
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.1/chroma.min.js"></script>
+    <script src="{{url_for('static', filename='app.js')}}"></script>
+  </body>
+</html>
