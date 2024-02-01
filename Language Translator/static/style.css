@@ -1,0 +1,48 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+}
+
+h1{
+    text-align: center;
+    color: #333;
+}
+
+form{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 8px;
+}
+
+button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover{
+    background-color: #45a049;
+}
+
+h3{
+    margin-top: 20px;
+    color: #333;
+}
+
+p{
+    color: #555;
+}
