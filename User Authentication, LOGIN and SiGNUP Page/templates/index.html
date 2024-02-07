@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Authentication Page</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+  </head>
+  <body>
+    <div id="login-container">
+      <form id="login-form" action="/login" method="post">
+        <div id="background-container"></div>
+        <h1 id="heading-1">Welcome to ROUSTUF</h1>
+        <h4 id="heading-2">Dear user, Please login to continue</h4>
+        <input type="email" name="email" id="user_email" required />
+        <h3 id="email-heading">Enter Email</h3>
+        <input type="password" name="password" id="user_password" required />
+        <h3 id="email-password">Enter Password</h3>
+        <button type="submit" id="loginButton">LOGIN</button>
+        <h4 id="signup-pglink">
+          Need an account ?
+          <a id="signup-link" href="#" onclick="showSignup()">Create One!</a>
+        </h4>
+      </form>
+    </div>
+    <div id="signup-container" style="display: none">
+      <form id="signup-form" action="/signup" method="post">
+        <div id="backgroundContainer"></div>
+        <h1 id="heading1">Welcome to ROUSTUF</h1>
+        <h4 id="heading2">SIGN-UP and Become a User</h4>
+        <input type="text" name="userName" id="usernameBox" required />
+        <input type="email" name="userEmail" id="userEmailBox" required />
+        <input type="password" name="userPassword" id="passwordBox" required />
+        <input type="password" name="confirmPassword" id="passBox" required />
+        <h3 id="userNameHeading">Create Username</h3>
+        <h3 id="newEmailHeading">Enter Email</h3>
+        <h3 id="newPassHeading">Create Password</h3>
+        <h3 id="oldPassHeading">Confirm Password</h3>
+        <button type="submit" id="signupButton">SIGN-UP</button>
+        <h4 id="login-pgLink">
+          Already a user ?
+          <a id="login-link" href="#" onclick="showLogin()">Login Now!</a>
+        </h4>
+      </form>
+    </div>
+
+    {% with messages = get_flashed_messages(with_categories=true) %} {% if
+    messages %} {% for category, message in messages %}
+    <div class="flash-{{ category }}">{{ message }}</div>
+    {% endfor %} {% endif %} {% endwith %}
+
+    <script src="{{url_for('static', filename ='app.js')}}"></script>
+  </body>
+</html>

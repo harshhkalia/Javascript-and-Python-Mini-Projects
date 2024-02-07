@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+
+#background-container {
+  width: 320px;
+  height: 300px;
+  margin-top: 110px;
+  margin-left: 600px;
+  background-color: #d4fe80;
+  border: 1px solid black;
+}
+
+#heading-1 {
+  color: #000;
+  position: relative;
+  bottom: 390px;
+  left: 624px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 27px;
+  margin-top: 90px;
+}
+
+#heading-2 {
+  color: #000;
+  position: relative;
+  bottom: 390px;
+  left: 638px;
+  font-family: cursive;
+  font-size: 15px;
+}
+
+#user_email {
+  position: relative;
+  left: 618px;
+  width: 285px;
+  bottom: 350px;
+  border-radius: 5px;
+}
+
+#email-heading {
+  color: #000;
+  position: relative;
+  bottom: 484px;
+  left: 620px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  margin-top: 90px;
+}
+
+#user_password {
+  position: relative;
+  left: 618px;
+  width: 285px;
+  bottom: 415px;
+  border-radius: 5px;
+}
+
+#email-password {
+  color: #000;
+  position: relative;
+  bottom: 550px;
+  left: 620px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  margin-top: 90px;
+}
+
+#loginButton {
+  padding: 8px 8px;
+  border: 1px solid black;
+  background-color: #e2a27e;
+  color: #000;
+  font-size: 1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 6px;
+  position: relative;
+  bottom: 505px;
+  cursor: pointer;
+  font-weight: bold;
+  left: 715px;
+}
+
+#loginButton:hover,
+#signupButton:hover,
+#change-details:hover {
+  background-color: #f89d69;
+}
+
+#signup-pglink {
+  color: #000;
+  position: relative;
+  bottom: 480px;
+  left: 648px;
+  font-family: cursive;
+  font-size: 15px;
+}
+
+#signup-link {
+  text-decoration: none;
+}
+
+#backgroundContainer {
+  width: 320px;
+  height: 420px;
+  position: relative;
+  bottom: 775px;
+  left: 600px;
+  background-color: #d4fe80;
+  border: 1px solid black;
+}
+
+#heading1 {
+  color: #000;
+  position: relative;
+  bottom: 1190px;
+  left: 624px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 27px;
+}
+
+#heading2 {
+  color: #000;
+  position: relative;
+  bottom: 1190px;
+  left: 652px;
+  font-family: cursive;
+  font-size: 15px;
+}
+
+#usernameBox {
+  position: relative;
+  left: 618px;
+  width: 285px;
+  bottom: 1150px;
+  border-radius: 5px;
+}
+
+#userEmailBox {
+  position: relative;
+  left: 327px;
+  width: 285px;
+  bottom: 1085px;
+  border-radius: 5px;
+}
+
+#passwordBox {
+  position: relative;
+  left: 35px;
+  width: 285px;
+  bottom: 1020px;
+  border-radius: 5px;
+}
+
+#passBox {
+  position: relative;
+  left: -259px;
+  width: 285px;
+  bottom: 955px;
+  border-radius: 5px;
+}
+
+#userNameHeading {
+  color: #000;
+  position: relative;
+  bottom: 1284px;
+  left: 620px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  margin-top: 90px;
+}
+
+#newEmailHeading {
+  color: #000;
+  position: relative;
+  bottom: 1244px;
+  left: 620px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+}
+
+#newPassHeading {
+  color: #000;
+  position: relative;
+  bottom: 1201px;
+  left: 620px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+}
+
+#oldPassHeading {
+  color: #000;
+  position: relative;
+  bottom: 1159px;
+  left: 620px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+}
+
+#signupButton {
+  padding: 8px 8px;
+  border: 1px solid black;
+  background-color: #e2a27e;
+  color: #000;
+  font-size: 1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 6px;
+  position: relative;
+  bottom: 1120px;
+  cursor: pointer;
+  font-weight: bold;
+  left: 715px;
+}
+
+#login-pgLink {
+  color: #000;
+  position: relative;
+  bottom: 1100px;
+  left: 653px;
+  font-family: cursive;
+  font-size: 15px;
+}
+
+#login-link {
+  text-decoration: none;
+}
+
+.flash-success {
+  color: black;
+  position: relative;
+  bottom: 600px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  left: 1010px;
+}
+
+.flash-error {
+  color: black;
+  position: relative;
+  bottom: 600px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  left: 1010px;
+}
