@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Come up, make your plans and have fun!</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename ='style.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  </head>
+  <body>
+    <header>
+      <div id="upper-buttons">
+        <a id="logo-heading" href="#" onclick="location.reload();">ROUSTUF</a>
+        <a id="bookmarks-heading" href="#" onclick="openNav()">BOOKMARK</a>
+        <a id="expenses-heading" href="#" onclick="openNav()"
+          >CALCULATE EXPENSES</a
+        >
+        <a id="user-account" href="#" onclick="openNav()">YOUR ACCOUNT</a>
+      </div>
+      <img
+        id="head-pic"
+        src="https://images.unsplash.com/photo-1660118824670-998ff68893bb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Mountains and Forests"
+      />
+
+      <div id="inner-text">
+        <h2 id="inner-text1">DREAM,</h2>
+        <h2 id="inner-text2">THRIVE</h2>
+      </div>
+      <h2 id="inner-text3">EXPLORE</h2>
+      <h4 id="lower-line">"Start Your Journey Now!"</h4>
+    </header>
+    <main>
+      <form id="searchDetails">
+        <input id="search-bar" type="text" placeholder="Search locations" required/>
+        <button id="search-button">Search</button>
+      </form>
+      <div id="options-display">
+        <h3 id="result-heading">SEARCH RESULT</h3>
+        <h3 id="location-heading" style="display: none">LOCATION DETAILS</h3>
+        <h3 id="currencyConv-heading" style="display: none">CC DETAILS</h3>
+        <h3 id="notesRem-heading" style="display: none">NOTES DETAILS</h3>
+      </div>
+      <div id="options-topbar">
+        <h3 id="try-these-heading">TRY THESE OUT</h3>
+        <button id="get-location">
+          <i class="fa-solid fa-map-pin"></i> Current Location
+        </button>
+        <button id="currency-converter">
+          <i class="fa-solid fa-coins"></i> Currency Converter
+        </button>
+        <button id="notesandreminders">
+          <i class="fa-solid fa-book"></i> Add Notes
+        </button>
+      </div>
+      <div id="result-container"></div>
+      <div id="left-line"></div>
+      <div id="right-line"></div>
+     <form action="/add_review" method="post">
+      <div id="review-container">
+        <h2 id="review-heading">ADD REVIEWS</h2>
+        <input
+          type="text"
+          id="location-input"
+          name="location-input"
+          placeholder=" Enter the name of location"
+          required
+        />
+        <button id="add-review">Add Review</button>
+        <textarea
+          id="write-review"
+          name="write-review"
+          placeholder=" Enter Your Review.."
+          required
+        ></textarea>
+        <div id="star-rating">
+          <div id="star-5">
+            <input type="radio" id="star5" name="rating" value="5" />
+            <label for="star5" title="5 stars">5 &#9733;</label>
+          </div>
+          <div id="star-4">
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label for="star4" title="4 stars">4 &#9733;</label>
+          </div>
+          <div id="star-3">
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label for="star3" title="3 stars">3 &#9733;</label>
+          </div>
+          <div id="star-2">
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label for="star2" title="2 stars">2 &#9733;</label>
+          </div>
+          <div id="star-1">
+            <input type="radio" id="star1" name="rating" value="1" />
+            <label for="star1" title="1 stars">1 &#9733;</label>
+          </div>
+        </div>
+     </form>
+        <div id="button1">
+          <button id="scrolltotop">SCROLL TO TOP</button>
+        </div>
+        <div id="button2">
+          <button id="search-again">ADD A REVIEW..</button>
+        </div>
+      </div>
+      <div id="random-reviewContainer">
+        <h3 id="randomReview-heading">Random Traveller Review</h3>
+        <form method="post">
+          <button id="refreshRandomReview" type="submit">Refresh</button>
+        </form>
+      </div>
+      <div id="searchForReview">
+        <h3 id="search4review-heading">Search For Review</h3>
+        <form action="/search" method="post">
+          <input
+          id="searchbarOfReview"
+          type="text"
+          placeholder=" Enter a location..."
+        />
+        <button id="search-a-review">Search</button>
+        </form>
+        <button id="refreshSearchedReview">Refresh</button>
+      </div>
+      <div id="contact-usContainer">
+        <h4 id="headingOfConUs">CONTACT ROUSTUF DEVELOPERS AT</h4>
+        <a id="gmail-link" href="#" target="_blank"
+          ><i class="fa-solid fa-envelope"></i> GMAIL</a
+        >
+        <h4 id="extra-text">AND</h4>
+        <a id="instagram-link" href="#"
+          ><i class="fa-brands fa-instagram"></i> Instagram</a
+        >
+      </div>
+      <div id="resultContainer">
+        <div id="search-resultElements" style="display: none">
+          <div id="searchResultUpperElements">
+            <h3 id="search-locationHeading1">You Searched For:</h3>
+            <h3 id="search-locationCurrWeather">Current Weather There:</h3>
+            <button id="search-location10daysWeather">Next 10 Days</button>
+          </div>
+          <div id="map-container"></div>
+          <div id="useful-tipsContainer">
+            <h2 id="useful-tipsHeading">USEFUL TIPS</h2>
+            <button id="moreOptionsButton">More Options</button>
+          </div>
+          <div id="moreOptionsContainer" style="display: none">
+            <h2 id="more-optionsHeading">MORE OPTIONS</h2>
+            <button id="more-weather-details">Weather Details</button>
+            <button id="more-famous-places">Nearby Famous Places</button>
+            <button id="more-restaurentsandcafes">Restaurents and Cafes</button>
+            <button id="more-transportations">Transportation Available</button>
+            <button id="more-accomodations">Search Hotels Nearby</button>
+            <button id="more-userReviews">User Reviews</button>
+            <button id="more-photosandvideos">Show Location Pics</button>
+            <button id="more-GoBack">Go Back</button>
+          </div>
+        </div>
+        <div id="currentLocationElements" style="display: none">
+          <div id="upperElements">
+            <h3 id="currentLocationHeading1">Your Current Location:</h3>
+            <h3 id="currentLocationHeading2">Current Weather There:</h3>
+            <button id="currentLocation10DaysWeather">Next 10 Days</button>
+          </div>
+          <div id="currentLocationMapContainer"></div>
+          <div id="calculateDistanceContainer">
+            <h2 id="calculateDistanceHeading">CALCULATE DISTANCE</h2>
+            <input
+              id="searchDistance"
+              type="text"
+              placeholder=" Enter a location"
+            />
+            <button id="searchDistanceButton">Search</button>
+            <button id="currLocationMoreDetails">More Details</button>
+          </div>
+          <div id="moreDetailsContainer" style="display: none">
+            <h2 id="moreDetailsHeading">MORE OPTIONS</h2>
+            <button id="moreWeatherDetails">Weather Details</button>
+            <button id="moreFamousPlaces">Nearby Famous Places</button>
+            <button id="moreRestaurentsAndCafes">Restaurents and Cafes</button>
+            <button id="moreTransportations">Transportation Available</button>
+            <button id="moreAccomodations">Search Hotels Nearby</button>
+            <button id="moreUserReviews">User Reviews</button>
+            <button id="morePhotosAndVideos">Show Location Pics</button>
+            <button id="moreGoBack">Go Back</button>
+          </div>
+        </div>
+        <div id="currencyConverterContainer" style="display: none">
+          <div id="inputContainer">
+            <h3 id="inputContainerHeading">CONVERT CURRENCY</h3>
+            <input id="fromCurrency" placeholder=" Input Value" type="number" />
+            <button id="convertButton">Convert</button>
+            <select id="fromCurrencySelector"></select>
+            <select id="toCurrencySelector"></select>
+            <i id="exchangeIcon" class="fa-solid fa-arrow-right-arrow-left"></i>
+            <h3 id="fromHeading">FROM</h3>
+            <h3 id="toHeading">TO</h3>
+          </div>
+          <div id="outputContainer">
+            <h3 id="outputContainerHeading">CONVERSION COMPLETED</h3>
+            <button id="closeConversionContainer">Go Back</button>
+          </div>
+        </div>
+        <div id="notesandreminderselements" style="display: none">
+          <form id="notesandremindersform" action="/add_note" method="post">
+            <label id="yourTittle" for="yourTittle">Your Tittle </label>
+            <input
+              id="tittleInput"
+              type="text"
+              name="tittleInput"
+              placeholder=" Enter tittle"
+              required
+            />
+            <label id="yourDate" for="yourDate">Enter a date </label>
+            <input id="dateInput" type="date" name="dateInput" />
+            <textarea
+              id="writeNotes"
+              placeholder=" Write your note.."
+              name="writeNotes"
+              required
+            ></textarea>
+            <input type="submit" id="submitButton" value="SAVE" />
+          </form>
+          <button id="showNotes">MORE</button>
+          <form id="searchNotesForm" action="/get_notes" method="get">
+            <div id="notesContainer" style="display: none">
+              <h3 id="notesHeading">YOUR NOTES</h3>
+              <input
+                type="text"
+                id="searchNotes"
+                placeholder=" Search Something.."
+              />
+              <button id="closeNotes">Close</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="randomReviewContainer">
+        {% if random_review %}
+         <h3 class="review">{{ random_review [3] }}</h3>
+         <p class="review-location">Location: {{ random_review [2] }}</p>
+         <p class="review-rating">Rating: {{ random_review [4] }}</p>
+         <p class="review-user">Review by: {{ random_review [5] }}</p>
+         {% else %}
+         <p class="no-review">No reviews found</p>
+         {% endif %}
+      </div>
+      <div id="searchedReviewContainer">
+        {% if searched_review %}
+         <h3 class="searched-review">{{ searched_review [3] }}</h3>
+         <p class="searchedReviewLocation">Location: {{ searched_review [2] }}</p>
+         <p class="searchedReviewRating">Rating: {{ searched_review [4] }}</p>
+         <p class="searchedReviewUser">Review by: {{ searched_review [5] }}</p>
+         {% else %}
+         <p class="searched-error">This function is in-complete<br>
+           as it's not working.</p>
+         {% endif %}
+      </div>
+      <div id="sidePanel">
+        <div id="bookmark-elements" style="display: none">
+          <div id="bookmark-container">
+            <h3 id="bookmark-heading">YOUR BOOKMARKS</h3>
+            <div id="internalContainerBookmark">
+              <input
+                id="search-bookmarks"
+                type="text"
+                placeholder=" Enter bookmark.."
+              />
+            </div>
+            <button id="closeBookmarks" onclick="closeNav()">CLOSE</button>
+          </div>
+        </div>
+        <div id="calculateExpensesElements" style="display: none">
+          <div id="expensesContainer">
+            <h3 id="expensesHeading">CALCULATE EXPENSES</h3>
+            <div id="internalContainerExpenses">
+              <label for="expense" id="expense">EXPENSE:</label>
+              <input
+                id="expenseName"
+                type="text"
+                name="expense"
+                placeholder=" Enter expense.."
+              />
+              <label for="amount" id="amount">AMOUNT:</label>
+              <input
+                id="amountValue"
+                type="number"
+                name="amount"
+                placeholder=" Enter amount.."
+              />
+              <label for="note" id="note">NOTE:</label>
+              <input
+                id="notesInput"
+                type="text"
+                name="notes"
+                placeholder=" Enter note.."
+              />
+              <button id="addExpenses" onclick="addExpense()">ADD</button>
+              <button id="subtractExpenses" onclick="subtractExpense()">
+                REMOVE
+              </button>
+            </div>
+            <div id="displayExpenses"></div>
+            <button id="closeExpensesPanel" onclick="closeNav()">CLOSE</button>
+          </div>
+        </div>
+        <div id="accountDetailsElements" style="display: none">
+          <div id="loginContainer">
+            <h3 id="loginHeading">LOGIN</h3>
+            <form id="inputFormLogin" action="/login" method="post">
+              <h3 id="usernameLine">USERNAME</h3>
+              <input id="usernameInput" type="text" name="userName" required />
+              <h3 id="passwordLine">PASSWORD</h3>
+              <input
+                id="passwordInput"
+                type="password"
+                name="password"
+                required
+              />
+              <input id="loginButton" type="submit" value="LOGIN" />
+              <h3 id="lastLine">
+                NEED A NEW ACCOUNT ? <a id="refToSignup" href="#">SIGN-UP</a>
+              </h3>
+            </form>
+          </div>
+          <button id="closeLoginPanel" onclick="closeNav()">CLOSE</button>
+          <div id="signupContainer" style="display: none">
+            <h3 id="signupHeading">SIGN-UP</h3>
+            <form id="inputFormSignup" action="/signup" method="post">
+              <h3 id="usernameHeading">CREATE USERNAME</h3>
+              <input
+                id="newUsernameInput"
+                name="newUserName"
+                type="text"
+                required
+              />
+              <h3 id="emailHeading">ENTER EMAIL</h3>
+              <input id="emailInput" type="email" name="email" required />
+              <h3 id="passwordHeading">CREATE A PASSWORD</h3>
+              <input
+                id="newPassword"
+                type="password"
+                name="newPassword"
+                required
+              />
+              <h3 id="confirmPassword">CONFIRM PASSWORD</h3>
+              <input
+                id="confirmPasswordInput"
+                type="password"
+                name="confirmPassword"
+                required
+              />
+              <input
+                id="signupButton"
+                type="submit"
+                value="SIGN-UP"
+                name="signup"
+              />
+              <h3 id="lastLineSignup">
+                ALREADY HAVE AN ACCOUNT ?
+                <a id="loginContainerLink" href="#">LOGIN</a>
+              </h3>
+            </form>
+            <button id="closeSignupPanel" onclick="closeNav()">CANCEL</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+  {% for category, message in messages %}
+    {% if category == 'success' %}
+      <div class="alert alert-success">
+        {{ message }}
+      </div>
+    {% elif category == 'error' %}
+      <div class="alert alert-danger">
+        {{ message }}
+      </div>
+    {% elif category == 'script' %}
+      <script>
+        {{ message }}
+      </script>
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% endwith %}
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="{{url_for('static', filename='app.js')}}"></script>
+  </body>
+</html>

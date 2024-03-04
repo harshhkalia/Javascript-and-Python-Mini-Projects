@@ -1,0 +1,2139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#upper-buttons {
+  padding: 10px;
+  background-color: transparent;
+  z-index: 100;
+  height: 23px;
+  position: fixed;
+  display: flex;
+}
+
+#logo-heading {
+  font-family: cursive;
+  font-size: x-large;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  top: 5px;
+  left: 15px;
+}
+
+#bookmarks-heading {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  top: 10px;
+  left: 835px;
+  transition: transform 0.3s ease;
+}
+
+#expenses-heading {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  top: 10px;
+  left: 916px;
+  transition: transform 0.3s ease;
+}
+
+#user-account {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  top: 10px;
+  left: 985px;
+  transition: transform 0.3s ease;
+}
+
+#head-pic {
+  width: 100%;
+  max-height: 480px;
+  cursor: pointer;
+  z-index: -100;
+  position: relative;
+  bottom: 44px;
+  object-fit: cover;
+}
+
+#bookmarks-heading:hover,
+#user-account:hover,
+#expenses-heading:hover {
+  transform: scale(1.1);
+}
+
+#inner-text {
+  position: relative;
+  bottom: 250px;
+  left: 600px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  font-size: 20px;
+}
+
+#inner-text3 {
+  position: relative;
+  bottom: 260px;
+  left: 580px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  font-size: 60px;
+}
+
+#lower-line {
+  position: relative;
+  bottom: 260px;
+  z-index: 100;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 3s steps(30, end) forwards infinite;
+  left: 630px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  font-size: 12px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: auto;
+  }
+}
+
+#search-bar {
+  padding: 6px 6px;
+  width: 370px;
+  position: relative;
+  left: 500px;
+  bottom: 230px;
+  height: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 7px 0 0 7px;
+}
+
+#search-button {
+  padding: 6px 6px;
+  color: black;
+  background-color: #42d9d9;
+  border-radius: 0 7px 7px 0;
+  position: relative;
+  cursor: pointer;
+  left: 494px;
+  bottom: 230px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 80px;
+}
+
+#search-button:hover,
+#add-review:hover,
+#scrolltotop:hover,
+#search-again:hover,
+#more-photosandvideos:hover,
+#more-userReviews:hover,
+#more-accomodations:hover,
+#more-transportations:hover,
+#more-famous-places:hover,
+#more-weather-details:hover,
+#more-restaurentsandcafes:hover,
+#morePhotosAndVideos:hover,
+#moreUserReviews:hover,
+#moreAccomodations:hover,
+#moreTransportations:hover,
+#moreRestaurentsAndCafes:hover,
+#moreFamousPlaces:hover,
+#moreWeatherDetails:hover,
+#convertButton:hover,
+#closeConversionContainer:hover {
+  background-color: #6dffff;
+}
+
+#options-topbar {
+  padding: 14px;
+  background-color: white;
+  border: 0.8px solid black;
+  border-radius: 0 6px 6px 0;
+  position: relative;
+  left: 495px;
+  bottom: 230px;
+  max-height: 22px;
+  width: 700px;
+}
+
+#options-display {
+  padding: 14px;
+  background-color: white;
+  border: 0.8px solid black;
+  border-radius: 6px 0 0 6px;
+  position: relative;
+  left: 326px;
+  bottom: 180px;
+  max-height: 22px;
+  width: 140px;
+}
+
+#result-heading {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+#options-toolbar {
+  display: flex;
+}
+
+#try-these-heading {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  color: black;
+  position: relative;
+}
+
+#get-location {
+  padding: 6px 6px;
+  border-radius: 6px;
+  color: black;
+  background-color: #ffe15a;
+  position: relative;
+  left: 230px;
+  bottom: 27px;
+  cursor: pointer;
+  font-size: 0.8em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#currency-converter {
+  padding: 6px 6px;
+  border-radius: 6px;
+  color: black;
+  background-color: #ffe15a;
+  position: relative;
+  left: 280px;
+  bottom: 27px;
+  cursor: pointer;
+  font-size: 0.8em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#notesandreminders {
+  padding: 6px 6px;
+  border-radius: 6px;
+  color: black;
+  background-color: #f4d031;
+  position: relative;
+  left: 330px;
+  bottom: 27px;
+  cursor: pointer;
+  font-size: 0.8em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#notesandreminders:hover,
+#currency-converter:hover,
+#get-location:hover,
+#refreshRandomReview:hover,
+#search-a-review:hover,
+#refreshSearchedReview:hover,
+#search-location10daysWeather:hover,
+#search-locationMoreWeatherDetails:hover,
+#moreOptionsButton:hover,
+#more-GoBack:hover,
+#currentLocation10DaysWeather:hover,
+#searchDistanceButton:hover,
+#currLocationMoreDetails:hover,
+#moreGoBack:hover,
+#submitButton:hover,
+#showNotes:hover,
+#closeNotes:hover,
+.notesEditBtn:hover,
+.notesDeleteBtn:hover,
+.goBack:hover,
+.closeTransportation:hover,
+.closePhotos:hover,
+.closeReviews:hover,
+#closeWeatherDetails:hover,
+#closeSearchedReviews:hover {
+  background-color: #ffe77c;
+}
+
+#location-heading {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  color: black;
+  position: relative;
+  left: 26px;
+  bottom: 9px;
+}
+
+#currencyConv-heading {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  color: black;
+  position: relative;
+}
+
+#notesRem-heading {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  color: black;
+  position: relative;
+}
+
+#result-container {
+  background-color: white;
+  border: 0.8px solid black;
+  position: relative;
+  left: 326px;
+  width: 897px;
+  height: 320px;
+  bottom: 275px;
+  z-index: -1;
+}
+
+#left-line {
+  height: 2px;
+  width: 520px;
+  background-color: black;
+  bottom: 220px;
+  position: relative;
+}
+
+#right-line {
+  height: 2px;
+  width: 520px;
+  background-color: black;
+  position: relative;
+  left: 1000px;
+  bottom: 222px;
+}
+
+#review-container {
+  background-color: white;
+  border: 0.8px solid black;
+  width: 674px;
+  position: relative;
+  bottom: 180px;
+  left: 420px;
+  height: 150px;
+  border-radius: 7px;
+}
+
+#review-heading {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 19px;
+  text-align: center;
+  color: white;
+  border-radius: 7px;
+  background-color: black;
+  border-bottom: 2px solid black;
+  position: relative;
+}
+
+#location-input {
+  width: 200px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  border-radius: 6px 0 0 6px;
+  position: relative;
+  z-index: 1;
+  left: 10px;
+  bottom: 57px;
+}
+
+#add-review {
+  position: relative;
+  left: 6px;
+  z-index: 100;
+  background-color: #42d9d9;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  padding: 3px 3px;
+  color: black;
+  bottom: 60px;
+}
+
+#write-review {
+  position: relative;
+  top: 35px;
+  right: 282px;
+  width: 285px;
+  z-index: 100;
+  height: 80px;
+}
+
+#star-rating {
+  position: relative;
+  left: 320px;
+  z-index: 100;
+  bottom: 80px;
+}
+
+#scrolltotop {
+  position: relative;
+  background-color: #42d9d9;
+  padding: 10px 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1em;
+  border-radius: 6px;
+  z-index: 100;
+  bottom: 180px;
+  color: black;
+  cursor: pointer;
+  left: 460px;
+}
+
+#search-again {
+  position: relative;
+  background-color: #42d9d9;
+  padding: 10px 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1em;
+  border-radius: 6px;
+  z-index: 100;
+  cursor: pointer;
+  bottom: 170px;
+  color: black;
+  left: 460px;
+}
+
+#random-reviewContainer {
+  width: 295px;
+  height: 328px;
+  background-color: white;
+  border: 0.8px solid black;
+  border-radius: 6px;
+  position: relative;
+  bottom: 758px;
+  left: 15px;
+}
+
+#randomReview-heading {
+  color: white;
+  border-radius: 6px;
+  background-color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+#refreshRandomReview {
+  position: relative;
+  padding: 9px 9px;
+  background-color: #f4d031;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  border-radius: 7px;
+  z-index: 100;
+  top: 256px;
+  cursor: pointer;
+  left: 218px;
+}
+
+#searchForReview {
+  width: 255px;
+  height: 328px;
+  background-color: white;
+  border: 0.8px solid black;
+  border-radius: 6px;
+  position: relative;
+  bottom: 1088px;
+  left: 1250px;
+}
+
+#search4review-heading {
+  color: white;
+  border-radius: 6px;
+  background-color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+#searchbarOfReview {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-radius: 6px 0 0 6px;
+  position: relative;
+  z-index: 100;
+  padding: 2px 2px;
+  left: 20px;
+  top: 15px;
+}
+
+#search-a-review {
+  padding: 2px 2px;
+  position: relative;
+  left: 16px;
+  z-index: 100;
+  top: 15px;
+  border-radius: 0 6px 6px 0;
+  background-color: #f4d031;
+  cursor: pointer;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#refreshSearchedReview {
+  position: relative;
+  padding: 9px 9px;
+  background-color: #f4d031;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  border-radius: 7px;
+  z-index: 100;
+  top: 235px;
+  cursor: pointer;
+  left: 180px;
+}
+
+#contact-usContainer {
+  width: 550px;
+  height: 50px;
+  background-color: white;
+  border: 0.8px solid black;
+  border-radius: 7px;
+  position: relative;
+  display: flex;
+  bottom: 1060px;
+  left: 470px;
+}
+
+#headingOfConUs {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  color: black;
+  position: relative;
+  top: 14px;
+  left: 10px;
+}
+
+#gmail-link {
+  text-decoration: none;
+  font-family: cursive;
+  position: relative;
+  color: black;
+  z-index: 100;
+  left: 30px;
+  top: 13px;
+}
+
+#extra-text {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  color: black;
+  position: relative;
+  top: 14px;
+  left: 40px;
+}
+
+#instagram-link {
+  text-decoration: none;
+  font-family: cursive;
+  z-index: 100;
+  position: relative;
+  color: black;
+  left: 50px;
+  top: 13px;
+}
+
+#resultContainer {
+  width: 880px;
+  height: 259px;
+  overflow-x: none;
+  background-color: black;
+  position: relative;
+  left: 335px;
+  bottom: 1410px;
+}
+
+#search-locationHeading1 {
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  top: 15px;
+  overflow-y: auto;
+  left: 20px;
+  position: relative;
+}
+
+#search-locationCurrWeather {
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  top: 20px;
+  overflow-y: auto;
+  left: 20px;
+  position: relative;
+}
+
+#search-location10daysWeather {
+  position: relative;
+  padding: 5px 5px;
+  background-color: #f4d031;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  left: 330px;
+  bottom: 5px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#usefulTip-heading {
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  top: 5px;
+  overflow-y: auto;
+  left: 20px;
+  position: relative;
+}
+
+#map-container {
+  width: 360px;
+  height: 234px;
+  background-color: white;
+  position: relative;
+  left: 510px;
+  bottom: 60px;
+}
+
+#useful-tipsContainer {
+  width: 485px;
+  border-radius: 6px;
+  height: 160px;
+  background-color: white;
+  position: relative;
+  left: 10px;
+  bottom: 220px;
+}
+
+#useful-tipsHeading {
+  background-color: #f4d031;
+  color: black;
+  border: 0.8px solid black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  border-radius: 6px;
+}
+
+#moreOptionsButton {
+  position: relative;
+  padding: 7px 7px;
+  background-color: #f4d031;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  left: 385px;
+  top: 90px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#moreOptionsContainer {
+  width: 485px;
+  border-radius: 6px;
+  height: 160px;
+  background-color: white;
+  position: relative;
+  left: 10px;
+  bottom: 220px;
+}
+
+#more-optionsHeading {
+  background-color: #f4d031;
+  color: black;
+  border: 0.8px solid black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  border-radius: 6px;
+}
+
+#more-weather-details {
+  position: relative;
+  padding: 7px 7px;
+  background-color: #42d9d9;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  left: 20px;
+  top: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#more-famous-places {
+  position: relative;
+  padding: 7px 7px;
+  background-color: #42d9d9;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  left: 35px;
+  top: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#more-restaurentsandcafes {
+  position: relative;
+  padding: 7px 7px;
+  background-color: #42d9d9;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  left: 50px;
+  top: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#more-transportations {
+  position: relative;
+  padding: 7px 7px;
+  background-color: #42d9d9;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  left: 20px;
+  top: 20px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#more-accomodations {
+  position: relative;
+  padding: 7px 7px;
+  background-color: #42d9d9;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  left: 35px;
+  top: 20px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#more-userReviews {
+  position: relative;
+  padding: 7px 7px;
+  background-color: #42d9d9;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  left: -125px;
+  top: 62px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#more-photosandvideos {
+  position: relative;
+  padding: 7px 7px;
+  background-color: #42d9d9;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  left: 20px;
+  top: 23px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#more-GoBack {
+  position: relative;
+  padding: 14px 14px;
+  background-color: #f4d031;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  left: 235px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#currentLocationHeading1 {
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  top: 15px;
+  overflow-y: auto;
+  left: 20px;
+  position: relative;
+}
+
+#currentLocationHeading2 {
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  top: 20px;
+  overflow-y: auto;
+  left: 20px;
+  position: relative;
+}
+
+#currentLocation10DaysWeather {
+  position: relative;
+  padding: 5px 5px;
+  background-color: #f4d031;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  left: 330px;
+  bottom: 5px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#currentLocationMapContainer {
+  width: 360px;
+  height: 234px;
+  background-color: white;
+  position: relative;
+  left: 510px;
+  bottom: 60px;
+}
+
+#calculateDistanceContainer {
+  width: 485px;
+  border-radius: 6px;
+  height: 160px;
+  background-color: white;
+  position: relative;
+  left: 10px;
+  bottom: 220px;
+}
+
+#calculateDistanceHeading {
+  background-color: #f4d031;
+  color: black;
+  border: 0.8px solid black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  border-radius: 6px;
+}
+
+#searchDistance {
+  position: relative;
+  width: 360px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1em;
+  left: 65px;
+  top: 3px;
+}
+
+#searchDistanceButton {
+  padding: 12px 12px;
+  border-radius: 7px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  background-color: #f4d031;
+  position: relative;
+  top: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  right: 165px;
+}
+
+#currLocationMoreDetails {
+  position: relative;
+  padding: 7px 7px;
+  background-color: #f4d031;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  left: 390px;
+  top: 50px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#moreDetailsContainer {
+  width: 485px;
+  border-radius: 6px;
+  height: 160px;
+  background-color: white;
+  position: relative;
+  left: 10px;
+  bottom: 220px;
+}
+
+#moreDetailsHeading {
+  background-color: #f4d031;
+  color: black;
+  border: 0.8px solid black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  border-radius: 6px;
+}
+
+#moreWeatherDetails {
+  position: relative;
+  padding: 7px 7px;
+  background-color: #42d9d9;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  left: 20px;
+  top: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#moreFamousPlaces {
+  position: relative;
+  padding: 7px 7px;
+  background-color: #42d9d9;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  left: 35px;
+  top: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#moreRestaurentsAndCafes {
+  position: relative;
+  padding: 7px 7px;
+  background-color: #42d9d9;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  left: 50px;
+  top: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#moreTransportations {
+  position: relative;
+  padding: 7px 7px;
+  background-color: #42d9d9;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  left: 20px;
+  top: 20px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#moreAccomodations {
+  position: relative;
+  padding: 7px 7px;
+  background-color: #42d9d9;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  left: 35px;
+  top: 20px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#moreUserReviews {
+  position: relative;
+  padding: 7px 7px;
+  background-color: #42d9d9;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  left: -125px;
+  top: 62px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#morePhotosAndVideos {
+  position: relative;
+  padding: 7px 7px;
+  background-color: #42d9d9;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  left: 20px;
+  top: 23px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#moreGoBack {
+  position: relative;
+  padding: 14px 14px;
+  background-color: #f4d031;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  left: 235px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#inputContainer {
+  width: 300px;
+  height: 230px;
+  background-color: #fff;
+  position: relative;
+  z-index: 20;
+  border-radius: 7px;
+  top: 15px;
+  left: 15px;
+}
+
+#inputContainerHeading {
+  background-color: #f4d031;
+  color: black;
+  border: 0.8px solid black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  border-radius: 6px;
+}
+
+#fromCurrency {
+  position: relative;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1em;
+  top: 80px;
+  left: 36px;
+  width: 230px;
+}
+
+#convertButton {
+  position: relative;
+  background-color: #42d9d9;
+  padding: 7px 7px;
+  border-radius: 6px;
+  cursor: pointer;
+  top: 100px;
+  left: 120px;
+}
+
+#fromCurrencySelector {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+}
+
+#toCurrencySelector {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  left: 120px;
+}
+
+#exchangeIcon {
+  cursor: pointer;
+  position: relative;
+  font-size: 22px;
+  left: 20px;
+  z-index: 100;
+  top: 3px;
+  color: black;
+}
+
+#fromHeading {
+  position: relative;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 14px;
+  bottom: 24px;
+  left: 10px;
+}
+
+#toHeading {
+  position: relative;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 14px;
+  bottom: 40px;
+  left: 185px;
+}
+
+#fromCurrencySelector,
+#toCurrencySelector {
+  z-index: 100;
+}
+
+#outputContainer {
+  width: 280px;
+  height: 210px;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+  transition: left 2s ease-in-out;
+  border-radius: 7px;
+  bottom: 200px;
+  left: 26px;
+  overflow-x: auto;
+}
+
+#outputContainerHeading {
+  background-color: #f4d031;
+  color: black;
+  border: 0.8px solid black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  border-radius: 6px;
+}
+
+#closeConversionContainer {
+  padding: 7px 7px;
+  background-color: #42d9d9;
+  border-radius: 7px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  left: 205px;
+  top: 150px;
+}
+
+#yourTittle {
+  color: white;
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 25px;
+  left: 20px;
+  bottom: 115px;
+}
+
+#tittleInput {
+  position: relative;
+  left: 26px;
+  bottom: 118px;
+  border-radius: 6px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1em;
+}
+
+#yourDate {
+  color: white;
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 25px;
+  right: 312px;
+  bottom: 80px;
+}
+
+#dateInput {
+  position: relative;
+  bottom: 85px;
+  right: 307px;
+  cursor: pointer;
+  border-radius: 6px;
+  width: auto;
+  height: 23px;
+}
+
+#writeNotes {
+  width: 280px;
+  height: 150px;
+  position: relative;
+  top: 90px;
+  right: 570px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#submitButton {
+  position: relative;
+  cursor: pointer;
+  left: 240px;
+  top: 40px;
+  background-color: #f4d031;
+  padding: 7px 7px;
+  border-radius: 7px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+}
+
+#showNotes {
+  padding: 4px 4px;
+  background-color: #f4d031;
+  border-radius: 0 7px 7px 0;
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  left: 300px;
+  bottom: 102px;
+  cursor: pointer;
+}
+
+#notesContainer {
+  position: relative;
+  background-color: white;
+  border-radius: 6px;
+  width: 490px;
+  height: 232px;
+  overflow-x: auto;
+  overflow-y: auto;
+  left: 380px;
+  bottom: 180px;
+}
+
+#notesHeading {
+  background-color: #f4d031;
+  color: black;
+  border: 0.8px solid black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  border-radius: 6px;
+}
+
+#searchNotes {
+  position: relative;
+  font-weight: bold;
+  top: 10px;
+  left: 100px;
+  width: 300px;
+  height: auto;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#closeNotes {
+  position: relative;
+  background-color: #f4d031;
+  padding: 9px 9px;
+  cursor: pointer;
+  border-radius: 7px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  left: 124px;
+  top: 170px;
+}
+
+#randomReviewContainer {
+  position: relative;
+  width: 286px;
+  height: 295px;
+  background-color: black;
+  bottom: 1700px;
+  left: 20px;
+}
+
+#searchedReviewContainer {
+  position: relative;
+  width: 244px;
+  height: 295px;
+  background-color: black;
+  bottom: 1995px;
+  left: 1257px;
+}
+
+#sidePanel {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 500;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+#bookmark-container {
+  width: 342px;
+  height: 450px;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 6px;
+  left: 35px;
+  top: 160px;
+}
+
+#bookmark-heading {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  background-color: #8fff76;
+  color: black;
+  border: 0.8px solid black;
+  border-radius: 6px;
+}
+
+#internalContainerBookmark {
+  width: 325px;
+  height: 412px;
+  background-color: black;
+  position: relative;
+  left: 8px;
+  top: 8px;
+}
+
+#closeBookmarks {
+  padding: 6px 6px;
+  background-color: #68cf51;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 0.8em;
+  border-radius: 6px;
+  position: relative;
+  bottom: 28px;
+  left: 270px;
+  cursor: pointer;
+}
+
+#closeBookmarks:hover,
+#addExpenses:hover,
+#subtractExpenses:hover,
+#removeExpense:hover,
+#removeAllExpenses:hover,
+#closeExpensesPanel:hover,
+#loginButton:hover,
+#signupButton:hover,
+#closeLoginPanel:hover,
+#closeSignupPanel:hover {
+  background-color: #5fef3e;
+}
+
+#search-bookmarks {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  position: relative;
+  top: 10px;
+  width: 300px;
+  left: 10px;
+}
+
+#expensesContainer {
+  width: 342px;
+  height: 650px;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 6px;
+  left: 35px;
+  top: 50px;
+}
+
+#expensesHeading {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  background-color: #8fff76;
+  color: black;
+  border: 0.8px solid black;
+  border-radius: 6px;
+}
+
+#internalContainerExpenses {
+  width: 325px;
+  height: 160px;
+  background-color: black;
+  position: relative;
+  left: 8px;
+  top: 8px;
+}
+
+#expense {
+  color: #fff;
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  top: 15px;
+  left: 20px;
+}
+
+#expenseName {
+  position: relative;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  border-radius: 6px;
+  top: 12px;
+  width: auto;
+  height: 18px;
+  left: 26px;
+}
+
+#amount {
+  color: #fff;
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  top: 22px;
+  left: 20px;
+}
+
+#amountValue {
+  position: relative;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  border-radius: 6px;
+  top: 19px;
+  width: auto;
+  height: 18px;
+  left: 31px;
+}
+
+#note {
+  color: #fff;
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  top: 55px;
+  right: 245px;
+}
+
+#notesInput {
+  position: relative;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  border-radius: 6px;
+  top: 24px;
+  width: auto;
+  height: 18px;
+  left: 118px;
+}
+
+#addExpenses {
+  padding: 7px 7px;
+  position: relative;
+  background-color: #68cf51;
+  border-radius: 7px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  top: 60px;
+  cursor: pointer;
+  right: 30px;
+}
+
+#subtractExpenses {
+  padding: 7px 7px;
+  cursor: pointer;
+  position: relative;
+  background-color: #68cf51;
+  border-radius: 7px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  top: 60px;
+  right: 30px;
+}
+
+#displayExpenses {
+  width: 325px;
+  height: 437px;
+  background-color: black;
+  position: relative;
+  top: 22px;
+  overflow-x: auto;
+  overflow-y: auto;
+  left: 8px;
+}
+
+.displayExpenseName {
+  position: relative;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  left: 15px;
+  margin-top: 15px;
+}
+
+.displayAmountValue {
+  position: relative;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  left: 15px;
+  margin-top: 20px;
+}
+
+#removeAllExpenses {
+  padding: 6px 6px;
+  background-color: #68cf51;
+  border-radius: 7px;
+  position: relative;
+  cursor: pointer;
+  left: 230px;
+  top: 28px;
+}
+
+.displayNotesInput {
+  position: relative;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  left: 15px;
+  margin-top: 25px;
+}
+
+#removeExpense {
+  padding: 6px 6px;
+  background-color: #68cf51;
+  border-radius: 7px;
+  position: relative;
+  cursor: pointer;
+  left: 210px;
+  top: 18px;
+}
+
+#closeExpensesPanel {
+  padding: 7px 7px;
+  border-radius: 7px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  background-color: #68cf51;
+  left: 270px;
+  bottom: 20px;
+}
+
+#loginContainer {
+  position: relative;
+  width: 340px;
+  height: 235px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 6px;
+  top: 220px;
+  left: 35px;
+}
+
+#loginHeading {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  background-color: #8fff76;
+  color: black;
+  border: 0.8px solid black;
+  border-radius: 6px;
+}
+
+#usernameLine {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 17px;
+  position: relative;
+  color: black;
+  top: 10px;
+  left: 16px;
+}
+
+#usernameInput {
+  position: relative;
+  top: 12px;
+  left: 15px;
+  width: 308px;
+  font-weight: bold;
+}
+
+#passwordLine {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 17px;
+  position: relative;
+  color: black;
+  top: 20px;
+  left: 16px;
+}
+
+#passwordInput {
+  position: relative;
+  top: 23px;
+  left: 15px;
+  width: 308px;
+  font-weight: bold;
+}
+
+#loginButton {
+  padding: 9px 9px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  background-color: #68cf51;
+  border-radius: 7px;
+  top: 40px;
+  cursor: pointer;
+  left: 140px;
+  position: relative;
+}
+
+#lastLine {
+  font-family: cursive;
+  font-weight: bold;
+  position: relative;
+  left: 55px;
+  font-size: 15px;
+  top: 71px;
+}
+
+#refToSignup {
+  text-decoration: none;
+  color: black;
+}
+
+#refToSignup:hover,
+#loginContainerLink:hover {
+  color: rgb(69, 65, 65);
+}
+
+#signupContainer {
+  position: relative;
+  width: 340px;
+  height: 330px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 6px;
+  bottom: 17px;
+  left: 35px;
+}
+
+#signupHeading {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  background-color: #8fff76;
+  color: black;
+  border: 0.8px solid black;
+  border-radius: 6px;
+}
+
+#usernameHeading {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 17px;
+  position: relative;
+  color: black;
+  top: 10px;
+  left: 16px;
+}
+
+#newUsernameInput {
+  position: relative;
+  top: 12px;
+  left: 15px;
+  width: 308px;
+  font-weight: bold;
+}
+
+#emailHeading {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 17px;
+  position: relative;
+  color: black;
+  top: 20px;
+  left: 16px;
+}
+
+#emailInput {
+  position: relative;
+  top: 23px;
+  left: 15px;
+  width: 308px;
+  font-weight: bold;
+}
+
+#passwordHeading {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 17px;
+  position: relative;
+  color: black;
+  top: 29px;
+  left: 16px;
+}
+
+#newPassword {
+  position: relative;
+  top: 33px;
+  left: 15px;
+  width: 308px;
+  font-weight: bold;
+}
+
+#confirmPassword {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 17px;
+  position: relative;
+  color: black;
+  top: 39px;
+  left: 16px;
+}
+
+#confirmPasswordInput {
+  position: relative;
+  top: 44px;
+  left: 15px;
+  width: 308px;
+  font-weight: bold;
+}
+
+#signupButton {
+  padding: 9px 9px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  background-color: #68cf51;
+  border-radius: 7px;
+  top: 58px;
+  cursor: pointer;
+  left: 140px;
+  position: relative;
+}
+
+#lastLineSignup {
+  font-family: cursive;
+  font-weight: bold;
+  position: relative;
+  left: 48px;
+  font-size: 14px;
+  top: 90px;
+}
+
+#loginContainerLink {
+  text-decoration: none;
+  color: black;
+}
+
+#closeLoginPanel {
+  padding: 12px 12px;
+  border-radius: 7px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  background-color: #68cf51;
+  left: 180px;
+  top: 250px;
+}
+
+#closeSignupPanel {
+  padding: 12px 12px;
+  border-radius: 7px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  background-color: #68cf51;
+  left: 150px;
+  top: 130px;
+}
+
+.flash-success {
+  position: relative;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: x-large;
+  bottom: 600px;
+}
+
+.flash-error {
+  position: relative;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 24px;
+  z-index: 1000;
+  bottom: 50px;
+}
+
+.no-review {
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+  top: 10px;
+  left: 15px;
+  font-size: 20px;
+}
+
+.review {
+  color: #fff;
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  top: 10px;
+  left: 15px;
+  font-size: 16px;
+}
+
+.review-location {
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+  top: 20px;
+  left: 15px;
+  font-size: 18px;
+}
+
+.review-rating {
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+  top: 30px;
+  left: 15px;
+  font-size: 20px;
+}
+
+.review-user {
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+  top: 40px;
+  left: 15px;
+  font-size: 20px;
+}
+
+.searched-review {
+  color: #fff;
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  top: 20px;
+  left: 15px;
+  font-size: 16px;
+}
+
+.searchedReviewLocation {
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+  top: 30px;
+  left: 15px;
+  font-size: 18px;
+}
+
+.searchedReviewRating {
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+  top: 40px;
+  left: 15px;
+  font-size: 20px;
+}
+
+.searchedReviewUser {
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+  top: 50px;
+  left: 15px;
+  font-size: 20px;
+}
+
+.searched-error {
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+  top: 60px;
+  left: 15px;
+  font-size: 16px;
+}
+
+.notesInContainer {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  position: relative;
+  margin-top: 10px;
+  font-size: 14px;
+  left: 15px;
+}
+
+.endingLine {
+  position: relative;
+  margin-top: 8px;
+}
+
+.displayAmountValue {
+  position: relative;
+  right: 15px;
+  margin-top: 10px;
+}
+
+.notesEditBtn {
+  position: relative;
+  background-color: #f4d031;
+  padding: 7px 7px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  color: black;
+  left: 20px;
+}
+
+.notesDeleteBtn {
+  position: relative;
+  background-color: #f4d031;
+  padding: 7px 7px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  color: black;
+  left: 30px;
+}
+
+.convertedValue {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 17px;
+  top: 28px;
+  left: 10px;
+  color: black;
+}
+
+.innerDetails {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+
+.goBack {
+  position: relative;
+  padding: 5px 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+  background-color: #f4d031;
+  left: 410px;
+  bottom: 90px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.weatherIcon {
+  position: relative;
+  left: 290px;
+  bottom: 92px;
+  width: auto;
+  height: 120px;
+}
+
+.goBackHeading {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  font-weight: bold;
+  left: 62px;
+  top: 62px;
+}
+
+.transportation-heading {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  left: 10px;
+  top: 10px;
+  color: black;
+}
+
+.transportation-parah {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  left: 10px;
+  top: 10px;
+  color: black;
+  margin-top: 7px;
+}
+
+.none-message {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  left: 10px;
+  top: 10px;
+  color: black;
+  margin-top: 7px;
+}
+
+.closeTransportation {
+  position: relative;
+  padding: 7px 7px;
+  border-radius: 6px;
+  background-color: #f4d031;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  left: 390px;
+  bottom: 5px;
+  cursor: pointer;
+}
+
+.error-message {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+  left: 125px;
+  top: 62px;
+}
+
+#photos-heading {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  position: relative;
+  left: 140px;
+  top: 4px;
+  margin-bottom: 10px;
+}
+
+#fetched-images {
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+  left: 53px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.closePhotos {
+  position: relative;
+  padding: 10px 10px;
+  border-radius: 6px;
+  background-color: #f4d031;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  left: 80px;
+  bottom: 32px;
+  cursor: pointer;
+}
+
+#userReviewHeading {
+  position: relative;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  left: 155px;
+  top: 8px;
+}
+
+#noReviewMessage {
+  position: relative;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  left: 95px;
+  font-size: 21px;
+  top: 30px;
+}
+
+.closeReviews {
+  position: relative;
+  padding: 7px 7px;
+  border-radius: 6px;
+  background-color: #f4d031;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  left: 405px;
+  top: 68px;
+  cursor: pointer;
+}
+
+#fetchedTips {
+  position: relative;
+  top: 30px;
+  left: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+.useful-tips {
+  position: relative;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  left: 15px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  bottom: 28px;
+}
+
+.map-heading {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  left: 15px;
+  top: 100px;
+  font-weight: bold;
+}
+
+#heading-weather {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  left: 10px;
+  top: 5px;
+}
+
+.weather-details {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  left: 10px;
+  top: 5px;
+  margin-bottom: 8px;
+}
+
+#weather-icon {
+  position: relative;
+  left: 290px;
+  bottom: 135px;
+  width: auto;
+  height: 150px;
+}
+
+#closeWeatherDetails {
+  position: relative;
+  padding: 7px 7px;
+  cursor: pointer;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-radius: 6px;
+  background-color: #f4d031;
+  right: 140px;
+  bottom: 120px;
+}
+
+#container-heading {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+  left: 28px;
+  top: 60px;
+}
+
+#searchedReviewHeading {
+  position: relative;
+  top: 7px;
+  left: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+}
+
+#noSearchedFound {
+  position: relative;
+  top: 24px;
+  left: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+}
+
+#closeSearchedReviews {
+  padding: 7px 7px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  background-color: #f4d031;
+  position: relative;
+  top: 32px;
+  border-radius: 6px;
+  cursor: pointer;
+  left: 170px;
+  margin-top: 12px;
+}
+
+#reviewInContainer {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  left: 22px;
+  top: 11px;
+}
