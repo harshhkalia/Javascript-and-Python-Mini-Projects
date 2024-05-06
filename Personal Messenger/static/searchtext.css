@@ -1,0 +1,145 @@
+#searchTextPageHeading {
+  position: relative;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 22px;
+  top: 75px;
+  left: 18px;
+}
+
+#searchTextSearchChats {
+  padding: 12px 12px;
+  color: white;
+  position: relative;
+  top: 126px;
+  width: 170px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  background-color: rgb(38, 21, 21);
+  border: 0.5px solid white;
+  right: 175px;
+}
+
+#home-homeChats {
+  padding: 12px 12px;
+  color: white;
+  position: relative;
+  top: 85px;
+  width: 170px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  background-color: grey;
+  border: 0.5px solid white;
+  right: 1px;
+}
+
+#searchTextSearchChats:hover {
+  background-color: rgb(106, 101, 101);
+  color: black;
+}
+
+#searchTextFooterBackground {
+  background-color: black;
+  padding: 60px 60px;
+  width: 100%;
+  top: 269px;
+  z-index: 100;
+  position: relative;
+}
+
+#contentAreaBackgroundContainer {
+  position: relative;
+  width: 700px;
+  height: 380px;
+  background-color: black;
+  border-radius: 7px;
+  left: 450px;
+  top: 30px;
+}
+
+#searchTextInput {
+  position: relative;
+  width: 680px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.2em;
+  top: 40px;
+  left: 10px;
+}
+
+#inputHeading {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  font-size: 0.9em;
+  left: 11px;
+  bottom: 6px;
+}
+
+#searchTextQuery {
+  padding: 13px 13px;
+  border-radius: 7px;
+  cursor: pointer;
+  left: 18px;
+  width: 670px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #e2e04e;
+  top: 35px;
+  position: relative;
+  color: black;
+}
+
+#searchTextQuery:hover,
+#closeSearchContainer:hover {
+  color: white;
+  background-color: rgb(106, 101, 101);
+}
+
+#noteText {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 14px;
+  color: white;
+  left: 10px;
+  margin-right: 10px;
+  top: 165px;
+}
+
+#closeSearchContainer {
+  padding: 13px 13px;
+  border-radius: 7px;
+  cursor: pointer;
+  left: 602px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #e2e04e;
+  top: 188px;
+  position: relative;
+  color: black;
+}
+
+#searchTextHeading {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  font-size: 1.3em;
+  bottom: 2px;
+  color: white;
+}
+
+#firstLine {
+  position: relative;
+  background-color: white;
+  width: 307px;
+  height: 1px;
+  bottom: 12px;
+}
+
+#secondLine {
+  position: relative;
+  background-color: white;
+  width: 312px;
+  height: 1px;
+  bottom: 13px;
+  left: 388px;
+}

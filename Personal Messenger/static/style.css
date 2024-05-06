@@ -1,0 +1,670 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#navbar-background {
+  padding: 15px 15px;
+  background-color: #3b413c;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+#logo-elements {
+  position: relative;
+  right: 5px;
+  display: flex;
+}
+
+#navbar-logo {
+  position: relative;
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+#nav-heading1 {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  cursor: pointer;
+  font-size: 22px;
+  left: 675px;
+  bottom: 8px;
+}
+
+#nav-heading2 {
+  position: relative;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  font-size: 24px;
+  top: 14px;
+  left: 560px;
+}
+
+#nav-logo {
+  position: relative;
+  color: white;
+  left: 2px;
+  font-size: 12px;
+  cursor: pointer;
+  top: 18px;
+}
+
+#heading-logo {
+  position: relative;
+  color: white;
+  left: 564px;
+  font-size: 12px;
+  cursor: pointer;
+  top: 25px;
+  rotate: -10deg;
+}
+
+#showSettings {
+  padding: 9px 9px;
+  background-color: #faff76;
+  color: black;
+  position: relative;
+  border-radius: 6px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  cursor: pointer;
+  left: 1140px;
+}
+
+#showSettings:hover {
+  background-color: #f7fe2d;
+}
+
+#splitContent {
+  position: relative;
+  background-color: black;
+  top: 95px;
+  height: 0.5px;
+  rotate: 90deg;
+  right: 600px;
+  z-index: 10;
+}
+
+#leftHeading1 {
+  position: relative;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  top: 75px;
+  left: 24px;
+}
+
+#leftHeading2 {
+  position: relative;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  top: 75px;
+  left: 27px;
+}
+
+#homeChats {
+  padding: 12px 12px;
+  color: white;
+  position: relative;
+  top: 85px;
+  width: 170px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  background-color: rgb(24, 21, 21);
+  border: 0.5px solid white;
+  right: 1px;
+}
+
+#searchChats {
+  padding: 12px 12px;
+  color: white;
+  position: relative;
+  top: 126px;
+  width: 170px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  background-color: rgb(24, 21, 21);
+  border: 0.5px solid white;
+  right: 175px;
+}
+
+#lockedChats {
+  padding: 12px 12px;
+  color: white;
+  position: relative;
+  top: 167px;
+  width: 170px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  background-color: rgb(24, 21, 21);
+  border: 0.5px solid white;
+  right: 349px;
+}
+
+#manageMedia {
+  padding: 12px 12px;
+  color: white;
+  position: relative;
+  top: 206px;
+  width: 170px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  background-color: rgb(24, 21, 21);
+  border: 0.5px solid white;
+  right: 524px;
+}
+
+#savedChats {
+  padding: 12px 12px;
+  color: white;
+  position: relative;
+  top: 247px;
+  width: 170px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  background-color: rgb(24, 21, 21);
+  border: 0.5px solid white;
+  right: 699px;
+}
+
+#showProfile {
+  padding: 12px 12px;
+  color: white;
+  position: relative;
+  top: 287px;
+  width: 170px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  background-color: rgb(24, 21, 21);
+  border: 0.5px solid white;
+  right: 872px;
+}
+
+#closeApp {
+  padding: 12px 12px;
+  color: white;
+  position: relative;
+  top: 361px;
+  width: 170px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  background-color: gray;
+  border: 0.5px solid white;
+  right: 1045px;
+}
+
+#buttonOutline1 {
+  position: relative;
+  height: 2px;
+  background-color: black;
+  top: 44px;
+  width: 169px;
+}
+
+#buttonOutline2 {
+  position: relative;
+  height: 2px;
+  background-color: black;
+  top: 82px;
+  width: 169px;
+}
+
+#buttonOutline3 {
+  position: relative;
+  height: 2px;
+  background-color: black;
+  top: 120px;
+  width: 169px;
+}
+
+#buttonOutline4 {
+  position: relative;
+  height: 2px;
+  background-color: black;
+  top: 158px;
+  width: 169px;
+}
+
+#buttonOutline5 {
+  position: relative;
+  height: 2px;
+  background-color: black;
+  top: 196px;
+  width: 169px;
+}
+
+#buttonOutline6 {
+  position: relative;
+  height: 2px;
+  background-color: black;
+  top: 235px;
+  width: 169px;
+}
+
+#buttonOutline7 {
+  position: relative;
+  height: 2px;
+  background-color: black;
+  top: 273px;
+  width: 169px;
+}
+
+#buttonOutline8 {
+  position: relative;
+  height: 2px;
+  background-color: black;
+  top: 306px;
+  width: 169px;
+}
+
+#buttonOutline9 {
+  position: relative;
+  height: 2px;
+  background-color: black;
+  top: 344px;
+  width: 169px;
+}
+
+#closeApp:hover {
+  color: black;
+  background-color: rgb(106, 101, 101);
+}
+
+#extraHeading1 {
+  position: relative;
+  top: 282px;
+  font-size: 14px;
+  left: 8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+#footer-background {
+  background-color: black;
+  padding: 60px 60px;
+  width: 100%;
+  top: 295px;
+  z-index: 100;
+  position: relative;
+}
+
+#aboutHeading {
+  z-index: 100;
+  position: relative;
+  color: white;
+  left: 280px;
+  bottom: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#aboutContent {
+  z-index: 100;
+  position: relative;
+  color: white;
+  left: 380px;
+  bottom: 70px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#copyrightsHeading {
+  z-index: 100;
+  position: relative;
+  color: white;
+  left: 610px;
+  bottom: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#copyrightContent {
+  z-index: 100;
+  position: relative;
+  color: white;
+  left: 710px;
+  bottom: 70px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#line1 {
+  position: relative;
+  background-color: white;
+  z-index: 100;
+  bottom: 78px;
+  width: 669px;
+  height: 1px;
+  right: 59px;
+}
+
+#line2 {
+  position: relative;
+  background-color: white;
+  z-index: 100;
+  bottom: 78px;
+  width: 669px;
+  height: 1px;
+  left: 886px;
+}
+
+#loginContainer {
+  width: 600px;
+  height: 320px;
+  background-color: black;
+  position: relative;
+  border-radius: 6px;
+  left: 480px;
+  top: 27px;
+}
+
+#loginHeading {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  top: 10px;
+  font-size: 20px;
+  text-align: center;
+  z-index: 100;
+}
+
+#loginHeading2 {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Arial Narrow",
+    Arial, sans-serif;
+  color: white;
+  top: 14px;
+  font-size: 15px;
+  text-align: center;
+  z-index: 100;
+}
+
+#loginInputHeading {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Arial Narrow",
+    Arial, sans-serif;
+  color: white;
+  top: 40px;
+  right: 200px;
+  font-size: 10px;
+  text-align: center;
+}
+
+#loginInput1 {
+  position: relative;
+  width: 560px;
+  height: 20px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  top: 48px;
+  left: 17px;
+}
+
+#loginInputHeading2 {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Arial Narrow",
+    Arial, sans-serif;
+  color: white;
+  top: 60px;
+  right: 237px;
+  font-size: 10px;
+  text-align: center;
+}
+
+#loginInput2 {
+  position: relative;
+  width: 560px;
+  height: 20px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  top: 68px;
+  left: 17px;
+}
+
+#loginButton {
+  padding: 10px 10px;
+  border-radius: 6px;
+  top: 95px;
+  left: 262px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+}
+
+#loginButton:hover,
+#signupButton:hover {
+  background-color: gray;
+  color: white;
+}
+
+#tittleToRefSignUp {
+  position: relative;
+  width: 560px;
+  height: 20px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  top: 132px;
+  left: 330px;
+  color: white;
+}
+
+#signUpContainerLink {
+  position: relative;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  top: 110px;
+  left: 525px;
+}
+
+#loginContainerHeadingBackground {
+  position: relative;
+  background-color: #3b413c;
+  border-radius: 6px;
+  padding: 36px 36px;
+  z-index: 10;
+  bottom: 199px;
+}
+
+#signupContainer {
+  width: 600px;
+  height: 445px;
+  background-color: black;
+  position: relative;
+  border-radius: 6px;
+  left: 480px;
+  top: 13px;
+  z-index: 110;
+}
+
+#signupHeading1 {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  top: 10px;
+  font-size: 24px;
+  text-align: center;
+  z-index: 100;
+}
+
+#signupHeading2 {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Arial Narrow",
+    Arial, sans-serif;
+  color: white;
+  top: 14px;
+  font-size: 15px;
+  text-align: center;
+  z-index: 100;
+}
+
+#signupHeadingBackground {
+  padding: 39px 39px;
+  background-color: #3b413c;
+  position: relative;
+  border-radius: 6px;
+  bottom: 53px;
+}
+
+#signupInputHeading1 {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Arial Narrow",
+    Arial, sans-serif;
+  color: white;
+  bottom: 40px;
+  right: 189px;
+  font-size: 13px;
+  text-align: center;
+}
+
+#signupInput1 {
+  position: relative;
+  width: 560px;
+  height: 20px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  bottom: 33px;
+  left: 17px;
+}
+
+#signupInputHeading2 {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Arial Narrow",
+    Arial, sans-serif;
+  color: white;
+  bottom: 28px;
+  right: 221px;
+  font-size: 13px;
+  text-align: center;
+}
+
+#signupInput2 {
+  position: relative;
+  width: 560px;
+  height: 20px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  bottom: 22px;
+  left: 17px;
+}
+
+#signupInputHeading3 {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Arial Narrow",
+    Arial, sans-serif;
+  color: white;
+  bottom: 14px;
+  right: 215px;
+  font-size: 13px;
+  text-align: center;
+}
+
+#signupInput3 {
+  position: relative;
+  width: 560px;
+  height: 20px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  bottom: 7px;
+  left: 17px;
+}
+
+#signupInputHeading4 {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Arial Narrow",
+    Arial, sans-serif;
+  color: white;
+  bottom: 1px;
+  right: 215px;
+  font-size: 13px;
+  text-align: center;
+}
+
+#signupInput4 {
+  position: relative;
+  width: 560px;
+  height: 20px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  top: 4px;
+  left: 17px;
+}
+
+#signupInputHeading5 {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Arial Narrow",
+    Arial, sans-serif;
+  color: white;
+  top: 8px;
+  right: 203px;
+  font-size: 13px;
+  text-align: center;
+}
+
+#signupInput5 {
+  position: relative;
+  width: 560px;
+  height: 20px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  top: 13px;
+  left: 17px;
+}
+
+#signupButton {
+  padding: 10px 10px;
+  border-radius: 6px;
+  top: 30px;
+  left: 262px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+}
+
+#loginRefTitle {
+  position: relative;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  top: 48px;
+  left: 330px;
+  color: white;
+}
+
+#loginContainerLink {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: white;
+  left: 540px;
+  top: 29px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#loginContainerLink:hover,
+#signUpContainerLink:hover {
+  color: gainsboro;
+}

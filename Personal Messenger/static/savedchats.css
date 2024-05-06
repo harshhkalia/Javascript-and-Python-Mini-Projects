@@ -1,0 +1,136 @@
+#home-homeChats {
+  padding: 12px 12px;
+  color: white;
+  position: relative;
+  top: 85px;
+  width: 170px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  background-color: gray;
+  border: 0.5px solid white;
+  right: 1px;
+}
+
+#home-savedChats {
+  padding: 12px 12px;
+  color: white;
+  position: relative;
+  top: 247px;
+  width: 170px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  background-color: rgb(38, 21, 21);
+  border: 0.5px solid white;
+  right: 699px;
+}
+
+#upperHeadingChats {
+  position: relative;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  z-index: 100;
+  top: 11px;
+  text-align: center;
+}
+
+#searchChatInput {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  border-radius: 6px 0 0 6px;
+  bottom: 1310px;
+  left: 610px;
+  width: 260px;
+  height: 30px;
+  text-indent: 10px;
+}
+
+#searchChatButton {
+  cursor: pointer;
+  padding: 7px 6px;
+  background-color: #e2e04e;
+  border-radius: 0 6px 6px 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+  bottom: 1310px;
+  left: 605px;
+}
+
+#searchChatButton:hover {
+  color: white;
+  background-color: black;
+}
+
+#savedChatsBackgroundContainer {
+  position: relative;
+  background-color: black;
+  width: 568px;
+  height: 400px;
+  border-radius: 6px;
+  bottom: 1270px;
+  left: 517px;
+}
+
+#upperHeadingSavedChats {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 22px;
+  top: 12px;
+  text-align: center;
+  color: white;
+}
+
+#belowLineHeadings {
+  position: relative;
+  background-color: white;
+  height: 1px;
+  width: auto;
+  top: 22px;
+}
+
+#lowerHeading {
+  position: relative;
+  font-size: 19px;
+  text-align: center;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  top: 342px;
+}
+
+#lowerLine1 {
+  position: relative;
+  background-color: white;
+  height: 1px;
+  width: 244px;
+  top: 332px;
+}
+
+#lowerLine2 {
+  position: relative;
+  background-color: white;
+  height: 1px;
+  width: 244px;
+  top: 332px;
+  left: 323px;
+}
+
+#innerHeadingSavedChats {
+  position: relative;
+  color: white;
+  font-family: cursive;
+  font-size: 22px;
+  text-align: center;
+  top: 118px;
+}
+
+#homeFooterBackground {
+  background-color: black;
+  padding: 60px 60px;
+  width: 100%;
+  top: -1162px;
+  z-index: 100;
+  position: relative;
+}

@@ -1,0 +1,178 @@
+#home-homeChats {
+  padding: 12px 12px;
+  color: white;
+  position: relative;
+  top: 85px;
+  width: 170px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  background-color: gray;
+  border: 0.5px solid white;
+  right: 1px;
+}
+
+#home-showProfile {
+  padding: 12px 12px;
+  color: white;
+  position: relative;
+  top: 287px;
+  width: 170px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  background-color: rgb(38, 21, 21);
+  border: 0.5px solid white;
+  right: 872px;
+}
+
+#homePageHeading {
+  position: relative;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 22px;
+  top: 75px;
+  left: 13px;
+}
+
+#backgroundContainer {
+  position: relative;
+  width: 480px;
+  height: 270px;
+  background-color: black;
+  border-radius: 7px;
+  left: 540px;
+  top: 40px;
+}
+
+#upperHeading {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 25px;
+  text-align: center;
+  top: 12px;
+  color: white;
+}
+
+#belowLine {
+  position: relative;
+  background-color: white;
+  height: 1px;
+  width: auto;
+  top: 23px;
+}
+
+#userNameHeading {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 26px;
+  color: white;
+  top: 40px;
+  left: 27px;
+}
+
+#phoneNumberHeading {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 26px;
+  color: white;
+  top: 50px;
+  left: 27px;
+}
+
+#emailHeading {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 26px;
+  color: white;
+  top: 60px;
+  left: 27px;
+}
+
+#updatePasswordButton {
+  position: relative;
+  background-color: #e2e04e;
+  padding: 7px 7px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  width: 200px;
+  height: auto;
+  left: 140px;
+  top: 109px;
+}
+
+#updatePasswordButton:hover,
+#deleteAccountButton:hover,
+#editUsername:hover,
+#editPhonenumber:hover,
+#editEmail:hover {
+  color: black;
+  background-color: white;
+}
+
+#belowLine2 {
+  position: relative;
+  width: auto;
+  background-color: white;
+  height: 1px;
+  top: 63px;
+}
+
+#deleteAccountButton {
+  position: relative;
+  cursor: pointer;
+  padding: 7px 7px;
+  background-color: #e2e04e;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  border-radius: 7px;
+  left: 393px;
+  bottom: 147px;
+}
+
+#homeFooterBackground {
+  background-color: black;
+  padding: 60px 60px;
+  width: 100%;
+  top: 379px;
+  z-index: 100;
+  position: relative;
+}
+
+#editUsername {
+  position: relative;
+  cursor: pointer;
+  padding: 7px 7px;
+  background-color: #e2e04e;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  border-radius: 7px;
+  left: 352px;
+  bottom: 84px;
+}
+
+#editPhonenumber {
+  position: relative;
+  cursor: pointer;
+  padding: 7px 7px;
+  background-color: #e2e04e;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  border-radius: 7px;
+  left: 317px;
+  bottom: 44px;
+}
+
+#editEmail {
+  position: relative;
+  cursor: pointer;
+  padding: 7px 7px;
+  background-color: #e2e04e;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  border-radius: 7px;
+  left: 282px;
+  bottom: 4px;
+}

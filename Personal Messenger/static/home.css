@@ -1,0 +1,691 @@
+#homePageHeading {
+  position: relative;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 22px;
+  top: 75px;
+  left: 22px;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+#homeFooterBackground {
+  background-color: black;
+  padding: 60px 60px;
+  width: 100%;
+  top: -728px;
+  z-index: 100;
+  position: relative;
+}
+
+#home-homeChats {
+  padding: 12px 12px;
+  color: white;
+  position: relative;
+  top: 85px;
+  width: 170px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  background-color: rgb(38, 21, 21);
+  border: 0.5px solid white;
+  right: 1px;
+}
+
+#home-searchChats {
+  padding: 12px 12px;
+  color: white;
+  position: relative;
+  top: 126px;
+  width: 170px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  background-color: gray;
+  border: 0.5px solid white;
+  right: 175px;
+}
+
+#home-lockedChats {
+  padding: 12px 12px;
+  color: white;
+  position: relative;
+  top: 167px;
+  width: 170px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  background-color: gray;
+  border: 0.5px solid white;
+  right: 349px;
+}
+
+#home-manageMedia {
+  padding: 12px 12px;
+  color: white;
+  position: relative;
+  top: 206px;
+  width: 170px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  background-color: gray;
+  border: 0.5px solid white;
+  right: 524px;
+}
+
+#home-savedChats {
+  padding: 12px 12px;
+  color: white;
+  position: relative;
+  top: 247px;
+  width: 170px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  background-color: gray;
+  border: 0.5px solid white;
+  right: 699px;
+}
+
+#home-showProfile {
+  padding: 12px 12px;
+  color: white;
+  position: relative;
+  top: 287px;
+  width: 170px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  background-color: gray;
+  border: 0.5px solid white;
+  right: 872px;
+}
+
+#home-homeChats:hover,
+#home-searchChats:hover,
+#home-lockedChats:hover,
+#home-manageMedia:hover,
+#home-savedChats:hover,
+#home-showProfile:hover,
+#closeApp:hover,
+#sendDocumentButton:hover,
+#sendMessageButton:hover {
+  color: black;
+  background-color: rgb(106, 101, 101);
+}
+
+#addNumberButton:hover,
+#closeSlideContainer:hover,
+#openSlideContainer:hover,
+#moreOptionsContacts:hover,
+#editContactButton:hover,
+#lockContactButton:hover,
+#blockContactButton:hover,
+#viewContactButton:hover,
+#hideContactButton:hover,
+#closeHideUsersContainer:hover {
+  color: white;
+  background-color: rgb(106, 101, 101);
+}
+
+#closeContactContainer:hover,
+#editContactSecondButton:hover {
+  color: white;
+  background-color: black;
+}
+
+#chatsBackground {
+  position: relative;
+  width: 180px;
+  height: 688px;
+  bottom: 39px;
+  left: 168px;
+  overflow-y: auto;
+  background-color: black;
+}
+
+#upperHeadingChats {
+  position: relative;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 22px;
+  z-index: 100;
+  top: 11px;
+  text-align: center;
+}
+
+#chatsBelowLine {
+  position: relative;
+  width: 180px;
+  height: 1px;
+  top: 21px;
+  background-color: white;
+}
+
+#yourChatsBackground {
+  position: relative;
+  padding: 26px 26px;
+  bottom: 30px;
+  background-color: #2a2828;
+}
+
+#formElements {
+  display: flex;
+  position: relative;
+  bottom: 20px;
+}
+
+#addNumberInput {
+  position: relative;
+  width: 290px;
+  top: 18px;
+  left: 15px;
+  bottom: 22px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+}
+
+#addNumberButton {
+  padding: 12px 12px;
+  border-radius: 7px;
+  cursor: pointer;
+  left: 354px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 70px;
+  background-color: #e2e04e;
+  bottom: 41px;
+  position: relative;
+  color: black;
+  top: 35px;
+}
+
+#chatsUpperBarBackground {
+  width: 1200px;
+  height: 52px;
+  background-color: #181616;
+  left: 348px;
+  position: relative;
+  bottom: 730px;
+}
+
+#chatsAreaBackground {
+  position: relative;
+  background-color: white;
+  width: 1200px;
+  left: 348px;
+  bottom: 730px;
+  height: 585px;
+}
+
+#writeAndSendBackground {
+  position: relative;
+  background-color: white;
+  left: 348px;
+  width: 1200px;
+  height: 52px;
+  bottom: 730px;
+}
+
+#sendDocumentButton {
+  padding: 9px 9px;
+  color: white;
+  position: relative;
+  top: 5px;
+  left: 21px;
+  background-color: grey;
+  cursor: pointer;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#messageInput {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1em;
+  background-color: #fdfcdc;
+  border: 1px solid black;
+  left: 29px;
+  top: 7px;
+  width: 1040px;
+  border-radius: 6px;
+  height: 35px;
+}
+
+::placeholder {
+  color: black;
+}
+
+#sendMessageButton {
+  padding: 9px 9px;
+  color: white;
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  top: 5px;
+  left: 32px;
+  background-color: grey;
+  cursor: pointer;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#downSlideContainer {
+  position: relative;
+  width: 1218px;
+  height: 300px;
+  background-color: white;
+  z-index: 100;
+  left: 347px;
+  bottom: 1525px;
+}
+
+#addContactsBackgroundContainer {
+  position: relative;
+  width: 800px;
+  left: 190px;
+  top: 60px;
+  height: 200px;
+  background-color: black;
+  border-radius: 7px;
+}
+
+#addContactsHeading {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  font-size: 1em;
+  color: white;
+  top: 10px;
+  z-index: 100;
+}
+
+#addContactsBackground {
+  position: relative;
+  padding: 20px 20px;
+  background-color: grey;
+  z-index: 1;
+  bottom: 18px;
+  border-radius: 7px;
+}
+
+#addContactsFirstHeading {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  font-size: 1em;
+  left: 15px;
+  bottom: 7px;
+}
+
+#addNameInput {
+  position: relative;
+  width: 310px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  left: 170px;
+  top: 17px;
+}
+
+#addContactsSecondHeading {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  font-size: 1em;
+  right: 143px;
+  bottom: 7px;
+}
+
+#closeSlideContainer {
+  padding: 10px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  left: 1055px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #e2e04e;
+  bottom: 41px;
+  position: relative;
+  color: black;
+  top: 17px;
+}
+
+#openSlideContainer {
+  padding: 8px 8px;
+  border-radius: 7px;
+  cursor: pointer;
+  left: 42px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #e2e04e;
+  bottom: 14px;
+  position: relative;
+  color: black;
+}
+
+.contact {
+  color: white;
+  position: relative;
+  margin-bottom: 7px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 13px 13px;
+  background-color: dimgrey;
+  top: 10px;
+  cursor: pointer;
+}
+
+.contact-class {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+  top: 16px;
+  left: 15px;
+  font-size: 20px;
+}
+
+#moreOptionsContacts {
+  padding: 8px 8px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  background-color: #e2e04e;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+  left: 1120px;
+  bottom: 11px;
+  position: relative;
+  display: none;
+}
+
+#moreOptionsContainer {
+  position: relative;
+  width: 700px;
+  height: 210px;
+  border-radius: 8px;
+  background-color: black;
+  top: 32px;
+  left: 300px;
+}
+
+#moreOptionsHeading {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  z-index: 100;
+  top: 10px;
+  color: white;
+}
+
+#moreOptionsBackground {
+  position: relative;
+  padding: 21px 21px;
+  background-color: gray;
+  border-radius: 8px;
+  bottom: 23px;
+}
+
+#editContactButton {
+  padding: 8px 8px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  color: black;
+  background-color: #e2e04e;
+  position: relative;
+  border-radius: 8px;
+  left: 15px;
+  cursor: pointer;
+}
+
+#lockContactButton {
+  padding: 8px 8px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  color: black;
+  background-color: #e2e04e;
+  position: relative;
+  border-radius: 8px;
+  left: 15px;
+  cursor: pointer;
+}
+
+#blockContactButton {
+  padding: 8px 8px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  color: black;
+  background-color: #e2e04e;
+  position: relative;
+  border-radius: 8px;
+  left: 15px;
+  cursor: pointer;
+}
+
+#viewContactButton {
+  padding: 8px 8px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  color: black;
+  background-color: #e2e04e;
+  position: relative;
+  border-radius: 8px;
+  left: 15px;
+  cursor: pointer;
+}
+
+#moreOptionsFormElements {
+  display: flex;
+  justify-content: space-evenly;
+  top: 25px;
+  position: relative;
+}
+
+#editContactsBackgroundContainer {
+  position: relative;
+  width: 800px;
+  left: 215px;
+  top: 45px;
+  height: 200px;
+  background-color: black;
+  border-radius: 7px;
+}
+
+#editNumberInput {
+  position: relative;
+  width: 290px;
+  top: 18px;
+  left: 15px;
+  bottom: 22px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+}
+
+#editNameInput {
+  position: relative;
+  width: 310px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  left: 170px;
+  top: 17px;
+}
+
+#hideContactButton {
+  padding: 8px 8px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  color: black;
+  background-color: #e2e04e;
+  position: relative;
+  border-radius: 8px;
+  left: 2px;
+  cursor: pointer;
+}
+
+.currentNumberHeading {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 12px;
+  left: 18px;
+  color: white;
+  bottom: 50px;
+}
+
+.currentNameHeading {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 12px;
+  right: 205px;
+  color: white;
+  bottom: 29px;
+}
+
+#viewContactsContainer {
+  position: relative;
+  width: 550px;
+  height: 330px;
+  background-color: dimgrey;
+  border-radius: 7px;
+  bottom: 1275px;
+  left: 650px;
+  overflow-y: auto;
+  border: 0.5px solid black;
+}
+
+#viewContactsHeading {
+  position: relative;
+  color: black;
+  top: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  font-size: 23px;
+  z-index: 100;
+}
+
+#contactHeadingBackground {
+  position: relative;
+  padding: 22px 22px;
+  background-color: #e2e04e;
+  z-index: 1;
+  border-radius: 7px;
+  bottom: 25px;
+  border: 0.5px solid black;
+}
+
+#closeContactContainer {
+  position: relative;
+  padding: 8px 8px;
+  background-color: #e2e04e;
+  border-radius: 7px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  color: black;
+  top: 218px;
+  left: 468px;
+  cursor: pointer;
+}
+
+.contactDetailsNumber {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  left: 675px;
+  z-index: 100;
+  top: -1534px;
+  color: white;
+  bottom: 50px;
+}
+
+.contactDetailsName {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  left: 278px;
+  z-index: 100;
+  top: -1504px;
+  color: white;
+  bottom: 50px;
+}
+
+#hideUsersContainer {
+  position: relative;
+  width: 550px;
+  height: 330px;
+  background-color: dimgrey;
+  border-radius: 7px;
+  bottom: 1275px;
+  left: 650px;
+  overflow-y: auto;
+  border: 0.5px solid black;
+}
+
+#hideUsersHeading {
+  position: relative;
+  color: black;
+  top: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  font-size: 23px;
+  z-index: 100;
+}
+
+#hideUsersBackground {
+  position: relative;
+  padding: 22px 22px;
+  background-color: #e2e04e;
+  z-index: 1;
+  border-radius: 7px;
+  bottom: 25px;
+  border: 0.5px solid black;
+}
+
+#closeHideUsersContainer {
+  position: relative;
+  padding: 8px 8px;
+  background-color: #e2e04e;
+  border-radius: 7px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  color: black;
+  top: 218px;
+  left: 468px;
+  cursor: pointer;
+}
+
+.newMessage {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1em;
+  padding: 15px 15px;
+  width: 140px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  top: 510px;
+  left: 990px;
+  margin-top: 15px;
+}
+
+.newPhoto {
+  position: relative;
+  object-fit: cover;
+  width: 200px;
+  height: 300px;
+  top: 510px;
+  left: 955px;
+  margin-top: 15px;
+  border: 0.5px solid black;
+}
+
+#editContactSecondButton {
+  position: relative;
+  padding: 8px 8px;
+  background-color: #e2e04e;
+  border-radius: 7px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8em;
+  color: black;
+  top: 68px;
+  left: 350px;
+  cursor: pointer;
+}

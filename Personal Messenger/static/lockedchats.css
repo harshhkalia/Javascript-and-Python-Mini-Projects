@@ -1,0 +1,46 @@
+#home-homeChats {
+  padding: 12px 12px;
+  color: white;
+  position: relative;
+  top: 85px;
+  width: 170px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  background-color: grey;
+  border: 0.5px solid white;
+  right: 1px;
+}
+
+#home-lockedChats {
+  padding: 12px 12px;
+  color: white;
+  position: relative;
+  top: 167px;
+  width: 170px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  background-color: rgb(38, 21, 21);
+  border: 0.5px solid white;
+  right: 349px;
+}
+
+#homePageHeading {
+  position: relative;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 22px;
+  top: 75px;
+  left: 12px;
+}
+
+#lockedChatsBackground {
+  position: relative;
+  width: 180px;
+  height: 688px;
+  bottom: 39px;
+  left: 168px;
+  overflow-y: auto;
+  background-color: black;
+}
