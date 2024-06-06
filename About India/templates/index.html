@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Explore lots of things about India and perform certain functionalities
+    </title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='script.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="loginElements">
+      <div id="loginContainer">
+        <h3 id="loginHeading">Dear user, please login to continue</h3>
+        <div id="lowerLine"></div>
+        <form action="/login" method="post" id="loginForm">
+          <h3 id="heading1">ENTER USERNAME OR EMAIL</h3>
+          <input
+            type="text"
+            id="usernameInput"
+            name="usernameoremail"
+            required
+          />
+          <h3 id="heading2">ENTER PASSWORD</h3>
+          <input
+            type="password"
+            id="passwordInput"
+            name="loginPassword"
+            required
+          />
+          <button id="loginButton">
+            LOGIN <i class="fa-solid fa-square-check"></i>
+          </button>
+        </form>
+        <a href="#" id="signupRef">SIGN-UP?</a>
+      </div>
+      <h3 id="outsideHeading1">
+        NOTE : If you continue without login then you won't be able to use some
+        features on website.
+      </h3>
+      <button id="indexButton1">
+        CONTINUE WITHOUT LOGIN <i class="fa-solid fa-right-to-bracket"></i>
+      </button>
+    </div>
+    <div id="signupElements" style="display: none">
+      <div id="signupContainer">
+        <h3 id="signupHeading">Welcome user, enter details to signup</h3>
+        <div id="lowerLine2"></div>
+        <form action="/signup" method="post" id="signupForm">
+          <h3 id="usernameHeading">ENTER USERNAME</h3>
+          <input
+            type="text"
+            id="newUsernameInput"
+            name="newUsernameInput"
+            required
+          />
+          <h3 id="emailHeading">ENTER EMAIL</h3>
+          <input type="email" id="emailInput" name="emailInput" required />
+          <h3 id="newPasswordHeading">ENTER PASSWORD</h3>
+          <input
+            type="password"
+            id="newPasswordInput"
+            name="newPasswordInput"
+            required
+          />
+          <h3 id="confirmPasswordHeading">CONFIRM PASSWORD</h3>
+          <input
+            type="password"
+            id="confirmPasswordInput"
+            name="confirmPasswordInput"
+            required
+          />
+          <button id="signupButton">
+            SIGN-UP <i class="fa-solid fa-circle-check"></i>
+          </button>
+        </form>
+        <a href="#" id="loginRef">LOGIN?</a>
+      </div>
+      <h3 id="outsideHeading2">
+        NOTE : It's better to login instead of going directly inside website.
+      </h3>
+      <button id="indexButton2">
+        CLOSE THIS PAGE <i class="fa-solid fa-file-lines"></i>
+      </button>
+    </div>
+
+    {% if error_message %}
+    <script>
+      alert("{{ error_message }}");
+    </script>
+    {% endif %} {% if success_message %}
+    <script>
+      alert("{{success_message}}");
+    </script>
+    {% endif %}
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+  </body>
+</html>

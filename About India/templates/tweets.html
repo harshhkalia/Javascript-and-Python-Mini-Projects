@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Explore lots of things about India and perform certain functionalities
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="{{url_for('static', filename='home.css')}}" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='tweets.css')}}"
+    />
+  </head>
+  <body>
+    <head>
+      <div id="navbarBackground">
+        <i id="navLogo" class="fa-solid fa-rupee-sign"></i>
+        <h3 id="navHeading1">
+          जानिए अपने देश के बारे में <i class="fa-solid fa-earth-asia"></i>
+        </h3>
+        <h3 id="navHeading2">Developed by: ROUSTUF</h3>
+        <span id="homeButton"
+          >HOME <i class="fa-solid fa-house-chimney"></i
+        ></span>
+        <span id="tweetsButton"
+          >TWEETS <i class="fa-regular fa-message"></i
+        ></span>
+        <button id="profileButton">
+          My Tweets <i class="fa-brands fa-pied-piper-pp"></i>
+        </button>
+        <i id="underLogo" class="fa-solid fa-circle-check"></i>
+      </div>
+    </head>
+    <main>
+      <div id="pageBackgroundContainer">
+        <textarea
+          name="tweetText"
+          id="tweetText"
+          placeholder="Write a tweet for others"
+        ></textarea>
+        <button id="postTweet">
+          Post my tweet <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </div>
+      <div id="backgroundLine"></div>
+      <div id="tweetsUploadedContainer">
+        <h3 id="tweetsHeading">People's tweets</h3>
+      </div>
+    </main>
+    <footer>
+      <div id="footer-background">
+        <h3 id="aboutPage">
+          ABOUT PAGE : On this page, you can find random reviews of peoples that
+          are related to INDIA.
+        </h3>
+      </div>
+    </footer>
+
+    <script src="{{url_for('static', filename='tweets.js')}}"></script>
+  </body>
+</html>

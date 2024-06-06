@@ -1,0 +1,569 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#navbarBackground {
+  position: relative;
+  width: 100%;
+  background-color: black;
+  height: 55px;
+}
+
+#navLogo {
+  position: relative;
+  color: white;
+  font-size: 2.3em;
+  cursor: pointer;
+  top: 10px;
+  z-index: 100;
+  left: 15px;
+}
+
+#navHeading1 {
+  position: relative;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  bottom: 22px;
+}
+
+#navHeading2 {
+  position: relative;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.3em;
+  bottom: 40px;
+  left: 1300px;
+}
+
+#homeButton {
+  position: relative;
+  color: lightgray;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  bottom: 74px;
+  font-size: 1.3em;
+  padding: 9px 9px;
+  left: 970px;
+}
+
+#tweetsButton {
+  position: relative;
+  color: white;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  bottom: 74px;
+  font-size: 1.3em;
+  padding: 9px 9px;
+  left: 990px;
+}
+
+#profileButton {
+  position: relative;
+  padding: 8px 8px;
+  background-color: yellow;
+  color: black;
+  border-radius: 7px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  cursor: pointer;
+  bottom: 80px;
+  right: 80px;
+  width: 400px;
+}
+
+#profileButton:hover,
+#searchButton:hover,
+#currentLocationButton:hover,
+#inputFocusButton:hover,
+#goBackButton:hover {
+  background-color: gray;
+  color: white;
+}
+
+#underLogo {
+  position: relative;
+  right: 586px;
+  bottom: 68px;
+  color: lightgray;
+  rotate: -10deg;
+  cursor: pointer;
+}
+
+#weatherContainer {
+  position: relative;
+  width: 650px;
+  height: 700px;
+  background-color: black;
+  border-radius: 7px;
+  left: 460px;
+  top: 17px;
+}
+
+#searchInput {
+  position: relative;
+  left: 10px;
+  top: 14px;
+  width: 619px;
+  padding: 3px 3px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#searchButton {
+  position: relative;
+  padding: 8px 8px;
+  background-color: yellow;
+  color: black;
+  border-radius: 7px;
+  top: 28px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  cursor: pointer;
+  left: 222px;
+  width: 200px;
+}
+
+#line1 {
+  position: relative;
+  background-color: white;
+  height: 1px;
+  top: 48px;
+}
+
+#innerHeading {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  color: white;
+  top: 56px;
+}
+
+#resultContainer {
+  position: relative;
+  background-color: transparent;
+  left: 15px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  top: 67px;
+  width: 620px;
+  height: 535px;
+  border-radius: 8px;
+}
+
+#cityInfo {
+  position: relative;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+#currentLocationButton {
+  position: relative;
+  padding: 6px 6px;
+  background-color: yellow;
+  color: white;
+  border-radius: 6px;
+  color: black;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  bottom: 507px;
+  left: 460px;
+}
+
+#weatherInfo {
+  position: relative;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2em;
+  top: 50px;
+  text-align: center;
+}
+
+#inputFocusButton {
+  position: relative;
+  z-index: 100;
+  padding: 8px 8px;
+  background-color: yellow;
+  color: black;
+  border-radius: 8px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  cursor: pointer;
+  top: 79px;
+  left: 235px;
+  width: 180px;
+}
+
+#goBackButton {
+  position: relative;
+  z-index: 100;
+  padding: 8px 8px;
+  background-color: yellow;
+  color: black;
+  border-radius: 8px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  cursor: pointer;
+  top: 314px;
+  left: 370px;
+}
+
+#newsContainer {
+  position: relative;
+  background-color: black;
+  border-radius: 7px;
+  width: 438px;
+  height: 704px;
+  left: 14px;
+  bottom: 684px;
+}
+
+#innerHeadingNews {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  top: 10px;
+  font-size: 2.4em;
+  color: white;
+}
+
+#refreshNewsButton {
+  position: relative;
+  padding: 12px 12px;
+  left: 390px;
+  bottom: 32px;
+  background-color: white;
+  color: black;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#refreshNewsButton:hover {
+  background-color: gray;
+  color: #ccc;
+}
+
+#newsLine {
+  position: relative;
+  height: 1px;
+  background-color: white;
+  width: auto;
+  bottom: 22px;
+}
+
+#newsDisplayContainer {
+  position: relative;
+  width: 418px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 615px;
+  border-radius: 8px;
+  background-color: #ccc;
+  left: 10px;
+  bottom: 10px;
+}
+
+#titleHeading {
+  position: relative;
+  left: 4px;
+  top: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1em;
+  color: black;
+}
+
+#descriptionText {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9em;
+  top: 5px;
+  color: black;
+  left: 5px;
+}
+
+#urlLink {
+  position: relative;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: lightyellow;
+  left: 5px;
+  top: 10px;
+}
+
+#thirdContainer {
+  position: relative;
+  width: 402px;
+  height: 702px;
+  border-radius: 7px;
+  left: 1120px;
+  background-color: black;
+  bottom: 1388px;
+}
+
+#currencyConverterContainer {
+  position: relative;
+  width: 380px;
+  height: 290px;
+  border-radius: 7px;
+  background-color: white;
+  left: 12px;
+  top: 17px;
+}
+
+#innerHeadingConverter {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.4em;
+  color: black;
+  top: 6px;
+  text-align: center;
+}
+
+#lineBelow {
+  position: relative;
+  width: auto;
+  height: 1px;
+  background-color: black;
+  top: 12px;
+}
+
+#amountInput {
+  position: relative;
+  height: 20px;
+  width: 352px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  left: 12px;
+  text-indent: 10px;
+  top: 122px;
+}
+
+#fromInput {
+  position: relative;
+  left: 23px;
+  top: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  left: 30px;
+}
+
+#belowHeading {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  color: black;
+  left: 37px;
+  top: 38px;
+}
+
+#convertButton {
+  position: relative;
+  padding: 7px 7px;
+  border-radius: 7px;
+  background-color: yellow;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  cursor: pointer;
+  left: 148px;
+  bottom: 6px;
+}
+
+#convertButton:hover,
+#translateButton:hover {
+  background-color: black;
+  color: white;
+}
+
+#toInput {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
+  color: black;
+  left: 204px;
+  bottom: 10px;
+}
+
+#belowHeading1 {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1em;
+  color: black;
+  left: 320px;
+  bottom: 13px;
+}
+
+#amountConverted {
+  position: relative;
+  left: 82px;
+  top: 55px;
+  border-radius: 7px;
+  width: 230px;
+  height: 70px;
+  background-color: #ccc;
+  z-index: 100;
+  border: 0.7px solid black;
+}
+
+#leftLine {
+  position: relative;
+  height: 1px;
+  z-index: 90;
+  top: 20px;
+  background-color: black;
+}
+
+#belowHeading3 {
+  position: relative;
+  text-align: center;
+  color: black;
+  top: 55px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#divideContainer {
+  position: relative;
+  height: 1px;
+  background-color: #ccc;
+  width: auto;
+  top: 34px;
+}
+
+#languageTranslatorContainer {
+  position: relative;
+  width: 380px;
+  height: 350px;
+  border-radius: 7px;
+  background-color: white;
+  left: 12px;
+  top: 46px;
+}
+
+#innerHeading4 {
+  position: relative;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  top: 8px;
+  font-size: 1.6em;
+}
+
+#oneLine {
+  position: relative;
+  height: 1px;
+  background-color: black;
+  width: auto;
+  top: 14px;
+}
+
+#textConvert {
+  position: relative;
+  height: 20px;
+  width: 352px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  left: 12px;
+  text-indent: 10px;
+  top: 32px;
+}
+
+#languageSelector {
+  position: relative;
+  top: 36px;
+  left: 80px;
+}
+
+#translateButton {
+  position: relative;
+  padding: 10px 10px;
+  border-radius: 7px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: yellow;
+  color: black;
+  cursor: pointer;
+  top: 80px;
+  left: 72px;
+  width: 180px;
+}
+
+#translatedTextHere {
+  position: relative;
+  background-color: #ccc;
+  border: 0.8px solid black;
+  border-radius: 7px;
+  left: 10px;
+  top: 100px;
+  width: 358px;
+  height: 142px;
+}
+
+#footer-background {
+  position: relative;
+  width: 100%;
+  background-color: black;
+  height: 88px;
+  bottom: 1360px;
+}
+
+#aboutPage {
+  position: relative;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  top: 20px;
+}
+
+#resultDetails {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  text-align: center;
+  top: 24px;
+}
+
+#profileContainer {
+  position: relative;
+  width: 399px;
+  height: 86px;
+  border-radius: 7px;
+  background-color: #ccc;
+  border: 0.5px solid black;
+  bottom: 2400px;
+  left: 596px;
+}
+
+#usernameHeading {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.4em;
+  text-align: center;
+  top: 4px;
+  color: black;
+}
+
+#emailHeading {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  top: 4px;
+  color: black;
+}
+
+#closeProfile {
+  position: relative;
+  padding: 3px 3px;
+  background-color: yellow;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-radius: 7px;
+  cursor: pointer;
+  left: 162px;
+  top: 10px;
+}
+
+#closeProfile:hover {
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Explore lots of things about India and perform certain functionalities
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="{{url_for('static', filename='home.css')}}" />
+  </head>
+  <body>
+    <head>
+      <div id="navbarBackground">
+        <i id="navLogo" class="fa-solid fa-rupee-sign"></i>
+        <h3 id="navHeading1">
+          जानिए अपने देश के बारे में <i class="fa-solid fa-earth-asia"></i>
+        </h3>
+        <h3 id="navHeading2">Developed by: ROUSTUF</h3>
+        <span id="homeButton"
+          >HOME <i class="fa-solid fa-house-chimney"></i
+        ></span>
+        <span id="tweetsButton"
+          >TWEETS <i class="fa-regular fa-message"></i
+        ></span>
+        <button id="profileButton">
+          My Profile <i class="fa-solid fa-user"></i>
+        </button>
+        <i id="underLogo" class="fa-solid fa-circle-check"></i>
+      </div>
+    </head>
+    <main>
+      <div id="weatherContainer">
+        <input type="text" id="searchInput" required />
+        <button id="searchButton">
+          Search Weather <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <div id="line1"></div>
+        <h3 id="innerHeading">Weather-Details</h3>
+        <div id="resultContainer"></div>
+        <button id="currentLocationButton">What's my current location ?</button>
+      </div>
+      <div id="newsContainer">
+        <h3 id="innerHeadingNews">Latest News</h3>
+        <button id="refreshNewsButton">
+          <i class="fa-solid fa-arrows-rotate"></i>
+        </button>
+        <div id="newsLine"></div>
+        <div id="newsDisplayContainer"></div>
+      </div>
+      <div id="thirdContainer">
+        <div id="currencyConverterContainer">
+          <h3 id="innerHeadingConverter">Convert the currency</h3>
+          <div id="lineBelow"></div>
+          <input
+            type="text"
+            id="amountInput"
+            placeholder="Enter the amount"
+            required
+          />
+          <select id="fromInput">
+            <option></option>
+          </select>
+          <h3 id="belowHeading">FROM</h3>
+          <button id="convertButton">
+            CONVERT <i class="fa-solid fa-money-bill-transfer"></i>
+          </button>
+          <select id="toInput">
+            <option></option>
+          </select>
+          <h3 id="belowHeading1">TO</h3>
+          <div id="amountConverted"></div>
+          <div id="leftLine"></div>
+          <h3 id="belowHeading3">RESULT</h3>
+        </div>
+        <div id="divideContainer"></div>
+        <div id="languageTranslatorContainer">
+          <h3 id="innerHeading4">Language translator</h3>
+          <div id="oneLine"></div>
+          <input type="text" id="textConvert" required />
+          <select id="languageSelector">
+            <option></option>
+          </select>
+          <button id="translateButton">
+            Translate <i class="fa-solid fa-language"></i>
+          </button>
+          <div id="translatedTextHere"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="footer-background">
+        <h3 id="aboutPage">
+          ABOUT PAGE : This page is developed by developers of ROUSTUF where you
+          can find out information about INDIA.
+        </h3>
+      </div>
+    </footer>
+    <div id="profileContainer">
+      <h3 id="usernameHeading">Your Username : {{ username }}</h3>
+      <h3 id="emailHeading">Email Used : {{ email }}</h3>
+      <button id="closeProfile">
+        Close <i class="fa-solid fa-rectangle-xmark"></i>
+      </button>
+    </div>
+    <script src="{{url_for('static', filename='home.js')}}"></script>
+  </body>
+</html>

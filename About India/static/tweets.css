@@ -1,0 +1,214 @@
+#homeButton {
+  position: relative;
+  color: white;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  bottom: 74px;
+  font-size: 1.3em;
+  padding: 9px 9px;
+  left: 970px;
+}
+
+#tweetsButton {
+  position: relative;
+  color: lightgray;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  bottom: 74px;
+  font-size: 1.3em;
+  padding: 9px 9px;
+  left: 990px;
+}
+
+#pageBackgroundContainer {
+  position: relative;
+  width: 390px;
+  height: 260px;
+  left: 572px;
+  top: 40px;
+  background-color: #ccc;
+  border-radius: 7px;
+  border: 0.8px solid black;
+}
+
+#tweetText {
+  position: relative;
+  left: 10px;
+  top: 10px;
+  border-radius: 7px;
+  text-indent: 4px;
+  background-color: white;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 366px;
+  height: 200px;
+}
+
+#postTweet {
+  position: relative;
+  padding: 8px 8px;
+  border-radius: 7px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: yellow;
+  color: black;
+  cursor: pointer;
+  width: 336px;
+  top: 13px;
+  left: 25px;
+}
+
+#postTweet:hover,
+.likeButton:hover,
+.reportButton:hover,
+.editButton:hover,
+.deleteButton:hover {
+  background-color: black;
+  color: white;
+}
+
+#backgroundLine {
+  position: relative;
+  height: 1px;
+  background-color: black;
+  width: 100%;
+  top: 66px;
+}
+
+#tweetsUploadedContainer {
+  position: relative;
+  width: 1512px;
+  height: 400px;
+  top: 78px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  left: 10px;
+  background-color: transparent;
+  border-radius: 7px;
+}
+
+#footer-background {
+  position: relative;
+  width: 100%;
+  background-color: black;
+  height: 88px;
+  top: 84px;
+}
+
+#tweetsHeading {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  left: 4px;
+}
+
+.tweet {
+  position: relative;
+  background-color: #ccc;
+  margin-top: 4px;
+  left: 5px;
+  border-radius: 7px;
+  min-height: 107px;
+  border: 0.8px solid black;
+  top: 6px;
+}
+
+.username {
+  position: relative;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  top: 66px;
+  left: 1380px;
+}
+
+.text {
+  position: relative;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  bottom: 10px;
+  color: black;
+  left: 3px;
+  bottom: 17px;
+}
+
+.likes {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  left: 1410px;
+  bottom: 16px;
+}
+
+.likeButton {
+  position: relative;
+  padding: 7px 7px;
+  background-color: yellow;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  bottom: 3px;
+  border-radius: 7px;
+  left: 1267px;
+  cursor: pointer;
+}
+
+.reportButton {
+  position: relative;
+  padding: 7px 7px;
+  background-color: lightcoral;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  bottom: 3px;
+  border-radius: 7px;
+  left: 1142px;
+  cursor: pointer;
+}
+
+.editButton {
+  position: relative;
+  padding: 7px 7px;
+  background-color: yellow;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  bottom: 3px;
+  border-radius: 7px;
+  left: 1267px;
+  cursor: pointer;
+}
+
+.deleteButton {
+  position: relative;
+  padding: 7px 7px;
+  background-color: lightcoral;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  bottom: 3px;
+  border-radius: 7px;
+  left: 1142px;
+  cursor: pointer;
+}
+
+.yourUsername {
+  position: relative;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  top: 66px;
+  left: 1390px;
+}
+
+#tweetHeading {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  left: 4px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  top: 8px;
+}
+
+.date {
+  position: relative;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
+  top: 20px;
+  left: 440px;
+}
